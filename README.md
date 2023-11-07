@@ -3,14 +3,7 @@
 <details markdown>
   <br>
   <summary>[Commands]</summary>
-  <details markdown>
-    <summary>file</summary>
-  Run to find what type of file you are dealing with.
-</details>
-
-  
-  <p>Bullet lists nested within numbered list:</p>
-
+ 
 <ol>
   <li>fruits <ul>
       <li>apple</li>
@@ -21,6 +14,15 @@
       <li>broccoli</li>
   </ul></li>
 </ol>
+  
+    <summary>file</summary>
+  Run to find what type of file you are dealing with.
+</details>
+
+  
+  <p>Bullet lists nested within numbered list:</p>
+
+
   
   
   
