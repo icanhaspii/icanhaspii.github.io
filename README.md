@@ -1,9 +1,10 @@
 # icanhaspii.io - CTF CheatSheet
 
-<br>
 <details markdown>
   <br>
-  <summary>[Commands] file</summary>
+  <summary>[Commands]</summary>
+  <br>
+    <summary>file</summary>
   Run to find what type of file you are dealing with.
 </details>
 <details>
