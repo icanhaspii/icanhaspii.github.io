@@ -2,7 +2,7 @@
 <html>
 <body>
 <details markdown>
-  <B><summary>[Commands]</summary></details></B>
+  <summary><B>[Commands]</B></summary></details>
 <ul>
   <li><B>file</B>
     <ul>
