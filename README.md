@@ -4,13 +4,13 @@
   <br>
   <summary>[Commands]</summary>
 <ul>
-  <li>file <ul>
+  <li>file</li>
       <li>Run to find what type of file you are dealing with./li>
-  </ul></li>
-  <li>binwalk<ul>
+  </ul>
+<ul>
+  <li>binwalk</li>
       <li>Run to find what type of file you are dealing with.</li>
-  </ul></li>
-</ul>
+  </ul>
 </details>
   
   
