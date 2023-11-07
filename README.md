@@ -2,9 +2,9 @@
 <html>
 <body>
 <details markdown>
-  <B></B><summary>[Commands]</summary></details></B>
+  <B><summary>[Commands]</summary></details></B>
 <ul>
-  <li>file
+  <li><B>file</B>
     <ul>
       <li>Run this to determine what type of file you are dealing with.</li>
     </ul>
