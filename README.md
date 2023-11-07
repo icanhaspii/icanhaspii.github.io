@@ -1,5 +1,4 @@
-# icanhaspii.io
-icanhaspii CTF STUFF
+# icanhaspii.io - CTF CheatSheet
 
 <br>
 <details markdown>
