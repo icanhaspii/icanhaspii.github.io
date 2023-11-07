@@ -1,11 +1,9 @@
 # icanhaspii - CTF CheatSheet
-
 <html>
 <body>
-
-<h2>A Nested List</h2>
-<p>Lists can be nested (list inside list):</p>
-
+<details markdown>
+  <br>
+  <summary>[Commands]</summary>
 <ul>
   <li>Coffee</li>
   <li>Tea
@@ -17,27 +15,6 @@
   <li>Milk</li>
 </ul>
 
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<details markdown>
-  <br>
-  <summary>[Commands]</summary>
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
 
 <ol>
   <li>Coffee</li>
