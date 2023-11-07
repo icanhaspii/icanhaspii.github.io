@@ -2,17 +2,17 @@
 <html>
 <body>
 <details markdown>
-  <br>
   <summary>[Commands]</summary>
 <ul>
-  <li>Coffee</li>
-  <li>Tea
+  <li>file</li>
     <ul>
-      <li>Black tea</li>
-      <li>Green tea</li>
+      <li>Run this to</li>
     </ul>
   </li>
-  <li>Milk</li>
+  <li>binwalik</li>
+   <ul>
+      <li>Run this to</li>
+    </ul>
 </ul>
 
 
