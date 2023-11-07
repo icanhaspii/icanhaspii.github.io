@@ -7,7 +7,24 @@
     <summary>file</summary>
   Run to find what type of file you are dealing with.
 </details>
-<details>
+
+  
+  <p>Bullet lists nested within numbered list:</p>
+
+<ol>
+  <li>fruits <ul>
+      <li>apple</li>
+      <li>banana</li>
+  </ul></li>
+  <li>vegetables <ul>
+      <li>carrot</li>
+      <li>broccoli</li>
+  </ul></li>
+</ol>
+  
+  
+  
+  <details>
   <br>
   <summary>[binwalk] Shows file contents</summary>
   Run to find a summary of file contents.
