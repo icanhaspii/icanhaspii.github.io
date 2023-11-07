@@ -1,19 +1,24 @@
 # icanhaspii - CTF CheatSheet
 
-<!DOCTYPE html>
 <html>
 <body>
 
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
 
 </body>
 </html>
-
 
 
 
@@ -75,6 +80,8 @@
 </details>
 
 
+</body>
+</html>
 
 
 
