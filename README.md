@@ -16,6 +16,8 @@
   <li>strings</li>
     <ul>
       <li>Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:
+<BR>
+<BR>
 <img src="images/EchoPrintToScreen_2022-06-15 094026.png">
  
       
