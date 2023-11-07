@@ -1,6 +1,5 @@
 # icanhaspii.io
-@icanhaspii CTF STUFF 
-
+icanhaspii CTF STUFF 
 
 Note: Split Screen Terminal Emulator tmux: 
 
