@@ -4,12 +4,13 @@
 <details markdown>
   <summary>[Commands]</summary>
 <ul>
-  <li>file</li>
+  <li>file
     <ul>
       <li>Run this to</li>
     </ul>
   </li>
   <li>binwalik</li>
+    <ul>
       <li>Run this to</li>
     </ul>
 </ul>
