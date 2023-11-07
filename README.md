@@ -10,7 +10,6 @@
     </ul>
   </li>
   <li>binwalik</li>
-   <ul>
       <li>Run this to</li>
     </ul>
 </ul>
