@@ -1,19 +1,16 @@
-# icanhaspii.io - CTF CheatSheet
+# icanhaspii - CTF CheatSheet
 
 <details markdown>
   <br>
   <summary>[Commands]</summary>
- 
-<ol>
+<ul>
   <li>file <ul>
       <li>Run to find what type of file you are dealing with./li>
   </ul></li>
   <li>binwalk<ul>
       <li>Run to find what type of file you are dealing with.</li>
   </ul></li>
-</ol>
-    <summary>file</summary>
-  Run to find what type of file you are dealing with.
+</ul>
 </details>
   
   
