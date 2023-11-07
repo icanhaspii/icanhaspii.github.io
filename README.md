@@ -9,7 +9,7 @@
       <li>Run this to determine the file type.</li>
     </ul>
   </li>
-  <li>binwalik</li>
+  <li>binwalk</li>
     <ul>
       <li>Run this to view a summary of the file contents.</li>
     </ul>
