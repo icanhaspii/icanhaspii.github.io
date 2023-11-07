@@ -11,7 +11,14 @@
   <li>binwalk</li>
       <li>Run to find what type of file you are dealing with.</li>
   </ul>
-</details>
+
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
 
 
 <ol>
