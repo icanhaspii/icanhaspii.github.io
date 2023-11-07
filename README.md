@@ -3,7 +3,7 @@
 <details markdown>
   <br>
   <summary>[Commands]</summary>
-  <br>
+  <details markdown>
     <summary>file</summary>
   Run to find what type of file you are dealing with.
 </details>
