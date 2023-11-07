@@ -5,25 +5,16 @@
   <summary>[Commands]</summary>
  
 <ol>
-  <li>fruits <ul>
-      <li>apple</li>
-      <li>banana</li>
+  <li>file <ul>
+      <li>Run to find what type of file you are dealing with./li>
   </ul></li>
-  <li>vegetables <ul>
-      <li>carrot</li>
-      <li>broccoli</li>
+  <li>binwalk<ul>
+      <li>Run to find what type of file you are dealing with.</li>
   </ul></li>
 </ol>
-  
     <summary>file</summary>
   Run to find what type of file you are dealing with.
 </details>
-
-  
-  <p>Bullet lists nested within numbered list:</p>
-
-
-  
   
   
   <details>
