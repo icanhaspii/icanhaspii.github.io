@@ -1,5 +1,29 @@
 # icanhaspii - CTF CheatSheet
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 <details markdown>
   <br>
   <summary>[Commands]</summary>
