@@ -10,7 +10,7 @@
     </ul>
   </li>
   <BR>
-  <li><B>>binwalk</B</li>
+  <li><B>binwalk</B></li>
     <ul>
       <li>Run this to view a summary of the file contents.</li>
     </ul>
