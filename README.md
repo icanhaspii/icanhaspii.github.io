@@ -3,23 +3,12 @@
 <details markdown>
   <br>
   <summary>[Commands]</summary>
-<ul>
-  <li>file</li>
-      <li>Run to find what type of file you are dealing with./li>
-  </ul>
-<ul>
-  <li>binwalk</li>
-      <li>Run to find what type of file you are dealing with.</li>
-  </ul>
-
-
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
 
 <ol>
   <li>Coffee</li>
