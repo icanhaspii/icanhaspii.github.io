@@ -6,13 +6,23 @@
 <ul>
   <li><B>file</B>
     <ul>
-      <li>Run this to determine what type of file you are dealing with.</li>
+      <li>Run this to determine what type of file you are dealing with:</li>
+      <BR>
+      <BR>
+<img src="images/File_Screenshot 2023-10-03 203208.png">
+      <BR>
+      <BR>
     </ul>
   </li>
   <BR>
   <li><B>binwalk</B></li>
     <ul>
-      <li>Run this to view a summary of the file contents.</li>
+      <li>Run this to view a summary of the file contents:</li>
+      <BR>
+      <BR>
+<img src="images/BinWalk_Screenshot 2023-10-03 203227.png">
+      <BR>
+      <BR>
     </ul>
   <BR>
   <li><B>strings</B></li>
