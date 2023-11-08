@@ -23,14 +23,13 @@
   <BR>
   <li><B>strings</B></li>
     <ul>
-      <li>Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:
+      <li>Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:</li>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
 <BR>
 You can even combine strings and grep:
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
-</li>
 </ul>
 
 </details>
