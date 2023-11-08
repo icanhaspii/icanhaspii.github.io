@@ -20,6 +20,7 @@
 <img src="images/BinWalk_Screenshot 2023-10-03 203227.png">
       <BR>
     </ul>
+  </li>
   <BR>
   <li><B>strings</B></li>
     <ul>
@@ -31,7 +32,8 @@ You can even combine strings and grep:
 <BR>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
-</ul>
+  </ul>
+</li>
 </details>
 
 </body>
