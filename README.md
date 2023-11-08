@@ -21,11 +21,12 @@
 <BR>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
-
+<BR>
+<BR>
 You can even combine stings and grep:
 <BR>
 <BR>
-<img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
+<img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
 
 
  
