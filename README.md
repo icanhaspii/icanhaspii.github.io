@@ -11,7 +11,6 @@
 <img src="images/File_Screenshot 2023-10-03 203208.png">
       <BR>
     </ul>
-  </li>
   <BR>
   <li><B>binwalk</B></li>
     <ul>
@@ -20,7 +19,6 @@
 <img src="images/BinWalk_Screenshot 2023-10-03 203227.png">
       <BR>
     </ul>
-  </li>
   <BR>
   <li><B>strings</B></li>
     <ul>
