@@ -32,8 +32,8 @@ You can even combine strings and grep:
 <BR>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
-  </ul>
-  </li>
+   </ul>
+ </li>
 </ul>
 </details>
 
