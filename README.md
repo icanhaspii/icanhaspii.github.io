@@ -31,15 +31,14 @@ You can even combine strings and grep:
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
 </ul>
-
 </details>
 
-  <details>
+<details>
   <br>
   <summary>[binwalk] Shows file contents</summary>
   Run to find a summary of file contents.
-
 </details>
+
 <details>
   <br>
   <summary>[strings] Spits out code</summary>
