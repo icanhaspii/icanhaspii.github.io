@@ -2,7 +2,7 @@
 <html>
 <body>
 <details>
-  <summary>[Commands]</summary>
+  <summary>[Linux Analysis Commands]</summary>
 <ul>
   <li><B>file</B>
     <ul>
