@@ -43,7 +43,7 @@ You can even combine strings and grep:
     </ul>
   <BR>
 <ul>
- <li><B>java -jar</B></li>
+ <li><B>java</B></li>
     <ul>
       <li>The java command will open a .java file:</li>
       <BR>
