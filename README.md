@@ -36,7 +36,7 @@ You can even combine strings and grep:
 <BR>
   <li><B>java -jar</B></li>
     <ul>
-      <li>This command will open a .jar file:</li>
+      <li>The java -jar command will open a .jar file:</li>
       <BR>
 <img src="images\Java_JarStegSolveHowTo.png">
       <BR>
@@ -45,23 +45,34 @@ You can even combine strings and grep:
 <ul>
  <li><B>java -jar</B></li>
     <ul>
-      <li>This command will open a .java file:</li>
+      <li>The java command will open a .java file:</li>
       <BR>
 <img src="images/Java_Screenshot 2022-06-15 085349_Edited.png">
       <BR>
     </ul>
-
-
-
-
-
-The base64 decode command will decode a b64 string: 
-
-The following will echo/print to screen a command: 
-
-
-
-
+ <BR>
+<ul>
+ <li><B>base64</B></li>
+    <ul>
+      <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few: 
+ <BR>
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q= 
+<BR>
+2. Type the following into your Linux command prompt to echo/print to screen: 
+<BR>
+echo 'Umlja19SMGxsM2Q=' | base64 -d 
+ <BR>
+3. Hit ENTER
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 172521.png">
+<BR>
+4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded base64 in standard flag forma to your screent: 
+<BR>
+echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 180945.png">
+<BR>
+</li>
 
 </ul>
 </details>
