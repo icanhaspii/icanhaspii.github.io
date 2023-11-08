@@ -26,6 +26,7 @@
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
 <BR>
+<BR>
 You can even combine strings and grep:
 <BR>
 <BR>
@@ -37,10 +38,27 @@ You can even combine strings and grep:
     <ul>
       <li>This command will open a .jar file:</li>
       <BR>
-<img src="images\JavaJarStegSolveHowTo.png">
+<img src="images\Java_JarStegSolveHowTo.png">
       <BR>
     </ul>
   <BR>
+<ul>
+ <li><B>java -jar</B></li>
+    <ul>
+      <li>This command will open a .java file:</li>
+      <BR>
+<img src="images/Java_Screenshot 2022-06-15 085349_Edited.png">
+      <BR>
+    </ul>
+
+
+
+
+
+The base64 decode command will decode a b64 string: 
+
+The following will echo/print to screen a command: 
+
 
 
 
