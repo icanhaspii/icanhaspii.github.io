@@ -8,9 +8,7 @@
     <ul>
       <li>Run this to determine what type of file you are dealing with:</li>
       <BR>
-      <BR>
 <img src="images/File_Screenshot 2023-10-03 203208.png">
-      <BR>
       <BR>
     </ul>
   </li>
@@ -19,9 +17,7 @@
     <ul>
       <li>Run this to view a summary of the file contents:</li>
       <BR>
-      <BR>
 <img src="images/BinWalk_Screenshot 2023-10-03 203227.png">
-      <BR>
       <BR>
     </ul>
   <BR>
@@ -29,23 +25,14 @@
     <ul>
       <li>Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:
 <BR>
-<BR>
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
-<BR>
 <BR>
 You can even combine strings and grep:
 <BR>
-<BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
-
-
- 
-      
       </li>
     </ul>
 
-
-</ul>
 
 </details>
 
