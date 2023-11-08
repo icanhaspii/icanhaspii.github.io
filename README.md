@@ -32,8 +32,25 @@ You can even combine strings and grep:
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
    </ul>
  </li>
+<BR>
+  <li><B>java -jar</B></li>
+    <ul>
+      <li>This command will open a .jar file:</li>
+      <BR>
+<img src="images\JavaJarStegSolveHowTo.png">
+      <BR>
+    </ul>
+  <BR>
+
+
+
+
 </ul>
 </details>
+
+
+
+
 
 </body>
 </html>
