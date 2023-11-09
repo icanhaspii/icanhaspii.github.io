@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>icanhaspii CTF STUFF</title>
 </head>
 <body>
 <h1>icanhaspii-CTF CheatSheet</h1>
