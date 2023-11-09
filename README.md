@@ -44,10 +44,11 @@ You can even combine strings and grep:
 <li><B>java -jar</B></li>
     <ul>
       <li>The java -jar command will open a .jar file:</li>
-      <BR>
+<BR>
 <img src="images\Java_JarStegSolveHowTo.png">
   </ul>
 </li>
+<BR>
  <li><B>java</B></li>
     <ul>
       <li>The java command will open a .java file:</li>
