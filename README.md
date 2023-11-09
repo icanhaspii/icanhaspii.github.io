@@ -36,12 +36,12 @@ You can even combine strings and grep:
 <BR>
   <li><B>java -jar</B></li>
     <ul>
+  </li>
       <li>The java -jar command will open a .jar file:</li>
       <BR>
 <img src="images\Java_JarStegSolveHowTo.png">
       <BR>
-    </ul>
-  <BR>
+</ul>
 <ul>
  <li><B>java</B></li>
     <ul>
