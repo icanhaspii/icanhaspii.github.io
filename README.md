@@ -52,9 +52,9 @@ You can even combine strings and grep:
     </ul>
  <BR>
 <ul>
- <li><B>base64</B></li>
-    <ul>
-      <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:
+<li><B>base64</B></li>
+<UL>
+<li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:
 <BR>
 <BR>
 1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=
@@ -155,8 +155,8 @@ You can try the following “Recipe” in CyberChef to decode:
 (a)From_Base64('A-Za-z0-9%2B/%3D',true,false)
 <BR>
 (b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)
-</li>
 </ul>
+</li>
 </ul>
 </details>
 
