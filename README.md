@@ -163,10 +163,9 @@ You can try the following “Recipe” in CyberChef to decode:
 <BR>
 <li><B>ifconfig</B></li>
 <ul>
-<li>To find your ip address and network configuration, you can use the older ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:</li>
+<li>To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:</li>
 <BR>
-<BR>
-<img src="images/ip_Screenshot 2023-11-09 104928.png">
+<img src="images/ip_Screenshot 2023-11-09 105007.png">
 <BR>
 <BR>
 <img src="images/ip_Screenshot 2023-11-09 104951.png">
