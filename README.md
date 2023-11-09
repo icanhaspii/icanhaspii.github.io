@@ -76,7 +76,28 @@ echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
 <img src="images/Base64_Screenshot 2023-11-08 180945.png">
 <BR>
 <BR>
-</li>
+-Here’s another way: 
+<BR>
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q= 
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 173111.png">
+<BR>
+<BR>
+2. Type the following into your Linux command prompt: 
+<BR>
+Base64 –d 
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 172847.png">
+<BR>
+<BR>
+3. Hit ENTER 
+
+
+
+
+
 
 </ul>
 </details>
