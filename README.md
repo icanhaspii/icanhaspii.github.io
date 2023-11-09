@@ -158,9 +158,9 @@ You can try the following “Recipe” in CyberChef to decode:
 (a)From_Base64('A-Za-z0-9%2B/%3D',true,false)
 <BR>
 (b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)
-<BR CLEAR=ALL>
-</UL>
 <BR>
+</UL>
+<BR CLEAR=ALL>
 <li><B>ifconfig</B></li>
 <ul>
 <li>To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:</li>
