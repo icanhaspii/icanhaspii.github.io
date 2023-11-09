@@ -171,7 +171,6 @@ You can try the following “Recipe” in CyberChef to decode:
 <img src="images/ip_Screenshot 2023-11-09 104951.png">
 <BR>
 <BR>
-<BR>
 <img src="images/ip_Screenshot 2023-11-09 104928.png">
 <BR>
 <BR>
