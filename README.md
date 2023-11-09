@@ -155,9 +155,10 @@ You can try the following “Recipe” in CyberChef to decode:
 (a)From_Base64('A-Za-z0-9%2B/%3D',true,false)
 <BR>
 (b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)
-</li>
 </UL>
 </li>
+</UL>
+
 
 </details>
 
