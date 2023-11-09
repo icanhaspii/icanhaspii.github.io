@@ -64,13 +64,17 @@ echo 'Umlja19SMGxsM2Q=' | base64 -d
  <BR>
 3. Hit ENTER
 <BR>
+<BR>
 <img src="images/Base64_Screenshot 2023-11-08 172521.png">
+<BR>
 <BR>
 4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded base64 in standard flag forma to your screent: 
 <BR>
 echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
 <BR>
+<BR>
 <img src="images/Base64_Screenshot 2023-11-08 180945.png">
+<BR>
 <BR>
 </li>
 
