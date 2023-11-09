@@ -39,8 +39,8 @@ You can even combine strings and grep:
 <BR>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
+<BR>
    </ul>
- </li>
 <BR>
 <li><B>java -jar</B></li>
     <ul>
