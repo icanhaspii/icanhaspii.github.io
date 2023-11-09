@@ -34,15 +34,12 @@ You can even combine strings and grep:
    </ul>
  </li>
 <BR>
-  <li><B>java -jar</B></li>
+<li><B>java -jar</B></li>
     <ul>
-  </li>
       <li>The java -jar command will open a .jar file:</li>
       <BR>
 <img src="images\Java_JarStegSolveHowTo.png">
-      <BR>
 </ul>
-<ul>
  <li><B>java</B></li>
     <ul>
       <li>The java command will open a .java file:</li>
@@ -51,7 +48,6 @@ You can even combine strings and grep:
       <BR>
     </ul>
  <BR>
-<ul>
 <li><B>base64</B></li>
 <UL>
 <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:
