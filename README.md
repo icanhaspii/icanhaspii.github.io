@@ -117,23 +117,44 @@ Base64 –d
 <img src="images/Base64_Screenshot 2023-11-08 172847.png">
 <BR>
 <BR>
--And yet another method: 
+-And yet another method:
 <BR>
 <BR>
-1. Save your base64 encoded string into a text editor. 
-
-
-
-
-
-
-
-
+1. Save your base64 encoded string into a text editor:
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 174625.png">
+<BR>
+<BR>
+2. Type the following into your Linux command prompt to echo/print to screen:
+<BR>
+<BR>
+base64 -d dns.txt >decoded.txt 
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 174546.png">
+<BR>
+<BR>
+3. Open your new file, “decoded.txt”:
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 174720.png">
+<BR>
+<BR>
+If you run across encoding similar to below: 
+<BR>
+<BR>
+IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String [IO.Compression.CompressionMode]::Decompress 
+<BR>
+<BR>
+You can try the following “Recipe” in CyberChef to decode: 
+<BR>
+<BR>
+(a)From_Base64('A-Za-z0-9%2B/%3D',true,false) 
+(b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false) 
+</li>
 </ul>
 </details>
-
-
-
 
 
 </body>
