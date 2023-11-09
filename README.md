@@ -55,13 +55,17 @@ You can even combine strings and grep:
  <li><B>base64</B></li>
     <ul>
       <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few: 
- <BR>
+<BR>
+<BR>
 1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q= 
+<BR>
 <BR>
 2. Type the following into your Linux command prompt to echo/print to screen: 
 <BR>
+<BR>
 echo 'Umlja19SMGxsM2Q=' | base64 -d 
- <BR>
+<BR>
+<BR>
 3. Hit ENTER
 <BR>
 <BR>
