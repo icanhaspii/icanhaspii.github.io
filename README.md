@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 <title>icanhaspii CTF STUFF</title>
+<meta name="Keywords" content="CTF, Tutorials, Programming, Web Development, Training, Learning, Linux">
+<meta name="Description" content="Well organized and easy to understand CTF and Linux tutorial with lots of examples.">
+<meta property="og:description" content="Well organized and easy to understand CTF and Linux tutorial with lots of examples.">
 </head>
 <body>
 <h1>icanhaspii-CTF CheatSheet</h1>
@@ -43,7 +46,8 @@ You can even combine strings and grep:
       <li>The java -jar command will open a .jar file:</li>
       <BR>
 <img src="images\Java_JarStegSolveHowTo.png">
-</ul>
+  </ul>
+</li>
  <li><B>java</B></li>
     <ul>
       <li>The java command will open a .java file:</li>
