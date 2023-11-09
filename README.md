@@ -57,7 +57,7 @@ You can even combine strings and grep:
  <BR>
 <li><B>base64</B></li>
 <UL>
-<li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:
+<li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:</li>
 <BR>
 <BR>
 1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=
