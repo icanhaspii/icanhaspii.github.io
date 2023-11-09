@@ -96,17 +96,21 @@ Base64 –d
 3. Hit ENTER 
 <BR>
 <BR>
-<img src="images/Base64_Screenshot 2023-11-08 172847.png">
+<img src="images/Base64_Screenshot 2023-11-08 173111.png">
 <BR>
 <BR>
 4. At the prompt, paste in your base64 encoded string: 
 <BR>
 <BR>
-<img src="images/Base64_Screenshot 2023-11-08 173111.png">
+<img src="images/Base64_Screenshot 2023-11-08 173249.png">
 <BR>
 <BR>
-
-
+5. Hit ENTER again. 
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 173640.png">
+<BR>
+<BR>
 
 
 </ul>
