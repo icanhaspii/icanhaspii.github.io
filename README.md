@@ -54,16 +54,16 @@ You can even combine strings and grep:
 <ul>
  <li><B>base64</B></li>
     <ul>
-      <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few: 
+      <li>The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:
 <BR>
 <BR>
-1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q= 
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=
 <BR>
 <BR>
-2. Type the following into your Linux command prompt to echo/print to screen: 
+2. Type the following into your Linux command prompt to echo/print to screen:
 <BR>
 <BR>
-echo 'Umlja19SMGxsM2Q=' | base64 -d 
+echo 'Umlja19SMGxsM2Q=' | base64 -d
 <BR>
 <BR>
 3. Hit ENTER
@@ -72,7 +72,7 @@ echo 'Umlja19SMGxsM2Q=' | base64 -d
 <img src="images/Base64_Screenshot 2023-11-08 172521.png">
 <BR>
 <BR>
-4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded b64 in standard flag format to your screen: 
+4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded b64 in standard flag format to your screen:
 <BR>
 <BR>
 echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
@@ -81,13 +81,13 @@ echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
 <img src="images/Base64_Screenshot 2023-11-08 180945.png">
 <BR>
 <BR>
--Here’s another way: 
+-Here’s another way:
 <BR>
 <BR>
-1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q= 
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=
 <BR>
 <BR>
-2. Type the following into your Linux command prompt: 
+2. Type the following into your Linux command prompt:
 <BR>
 <BR>
 Base64 –d
@@ -99,7 +99,7 @@ Base64 –d
 <img src="images/Base64_Screenshot 2023-11-08 173111.png">
 <BR>
 <BR>
-4. At the prompt, paste in your base64 encoded string: 
+4. At the prompt, paste in your base64 encoded string:
 <BR>
 <BR>
 <img src="images/Base64_Screenshot 2023-11-08 173249.png">
@@ -111,6 +111,22 @@ Base64 –d
 <img src="images/Base64_Screenshot 2023-11-08 173640.png">
 <BR>
 <BR>
+6. Finally, hit Control-D on your keyboard:
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 172847.png">
+<BR>
+<BR>
+-And yet another method: 
+<BR>
+<BR>
+1. Save your base64 encoded string into a text editor. 
+
+
+
+
+
+
 
 
 </ul>
