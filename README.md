@@ -93,19 +93,18 @@ echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"
 Base64 –d
 <BR>
 <BR>
-<img src="images/Base64_Screenshot 2023-11-08 173111.png">
-<BR>
-<BR>
 3. Hit ENTER 
 <BR>
 <BR>
 <img src="images/Base64_Screenshot 2023-11-08 172847.png">
 <BR>
 <BR>
-
-        
-        
-        <img src="images/Base64_Screenshot 2023-11-08 172847.png">
+4. At the prompt, paste in your base64 encoded string: 
+<BR>
+<BR>
+<img src="images/Base64_Screenshot 2023-11-08 173111.png">
+<BR>
+<BR>
 
 
 
