@@ -105,7 +105,7 @@ Base64 –d
 <img src="images/Base64_Screenshot 2023-11-08 173249.png">
 <BR>
 <BR>
-5. Hit ENTER again. 
+5. Hit ENTER again:
 <BR>
 <BR>
 <img src="images/Base64_Screenshot 2023-11-08 173640.png">
@@ -129,7 +129,7 @@ Base64 –d
 2. Type the following into your Linux command prompt to echo/print to screen:
 <BR>
 <BR>
-base64 -d dns.txt >decoded.txt 
+base64 -d dns.txt >decoded.txt
 <BR>
 <BR>
 <img src="images/Base64_Screenshot 2023-11-08 174546.png">
@@ -141,18 +141,22 @@ base64 -d dns.txt >decoded.txt
 <img src="images/Base64_Screenshot 2023-11-08 174720.png">
 <BR>
 <BR>
-If you run across encoding similar to below: 
+If you run across encoding similar to below:
 <BR>
 <BR>
-IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String [IO.Compression.CompressionMode]::Decompress 
+IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String
+<BR>
+[IO.Compression.CompressionMode]::Decompress
 <BR>
 <BR>
-You can try the following “Recipe” in CyberChef to decode: 
+You can try the following “Recipe” in CyberChef to decode:
 <BR>
 <BR>
-(a)From_Base64('A-Za-z0-9%2B/%3D',true,false) 
-(b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false) 
+(a)From_Base64('A-Za-z0-9%2B/%3D',true,false)
+<BR>
+(b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)
 </li>
+</ul>
 </ul>
 </details>
 
