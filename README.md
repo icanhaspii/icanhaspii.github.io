@@ -153,7 +153,7 @@ You can try the following “Recipe” in CyberChef to decode:
 (b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)
 </li>
 </UL>
-
+</li>
 </details>
 
 
