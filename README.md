@@ -8,7 +8,7 @@
 <details>
   <summary>[Linux Analysis Commands]</summary>
 <ul>
-  <li><B>file</B>
+  <li><B>file</B></li>
     <ul>
       <li>Run this to determine what type of file you are dealing with:</li>
       <BR>
