@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en-US">
 <head>
 <title>icanhaspii CTF STUFF</title>
