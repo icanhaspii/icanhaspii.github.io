@@ -1,6 +1,10 @@
-# icanhaspii-CTF CheatSheet
+<!DOCTYPE html>
 <html>
+<head>
+<title>Page Title</title>
+</head>
 <body>
+<h1>icanhaspii-CTF CheatSheet</h1>
 <details>
   <summary>[Linux Analysis Commands]</summary>
 <ul>
