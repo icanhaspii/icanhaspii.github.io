@@ -47,7 +47,6 @@ You can even combine strings and grep:
 <BR>
 <img src="images\Java_JarStegSolveHowTo.png">
   </ul>
-</li>
 <BR>
  <li><B>java</B></li>
     <ul>
