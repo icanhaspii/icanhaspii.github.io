@@ -178,7 +178,7 @@ You can try the following “Recipe” in CyberChef to decode:
   </ul>
 </details>
 <details>
-<summary>[Pcaps]</summary>
+<summary>[Pcap Analysis]</summary>
 <ul>
   <li><B>Strings</B></li>
     <ul>
