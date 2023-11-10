@@ -190,7 +190,9 @@ You can try the following “Recipe” in CyberChef to decode:
   <BR>
   <li><B>TShark</B></li>
     <ul>
-      <li><a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file">You can extract ip addresses from a Pcap using Tshark</a></li> To extract just the destination ip, type the following command:
+      <li><a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file">You can extract ip addresses from a Pcap using Tshark</a></li>
+<BR>
+To extract just the destination ip, type the following command:
 <BR>
 <BR>
 <img src="images/TShark_Screenshot 2023-03-16 211016.jpg">
