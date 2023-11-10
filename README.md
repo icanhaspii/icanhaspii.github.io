@@ -182,7 +182,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <ul>
   <li><B>Strings</B></li>
     <ul>
-      <li>You can run strings on a Pcap!  Below are a couple examples (I like to pipe my results to a .txt file for easier review):</li>
+      <li>You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):</li>
       <BR>
 <img src="images/StringsPcap_Screenshot 2023-11-09 184958.png">
       <BR>
@@ -206,7 +206,7 @@ To extract both the destination ip and the source ip, type the following command
 <BR>
 <li><B>Zeek</B></li>
   <ul>
-<li>John Hubbard has a fantastic install video here:<a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard"></a></li>
+<li>John Hubbard has a fantastic install video here:</li><a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard"></a></li>
 <BR>
 <BR>
 Zeek installs itself here: 
