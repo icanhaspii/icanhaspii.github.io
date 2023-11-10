@@ -9,7 +9,8 @@
 <h1>icanhaspii-CTF CheatSheet</h1>
 <details>
   <summary>[Linux Analysis Commands]</summary>
-<ul>
+</details>
+  <ul>
   <li><B>file</B></li>
     <ul>
       <li>Run this to determine what type of file you are dealing with:</li>
@@ -188,7 +189,7 @@ You can try the following “Recipe” in CyberChef to decode:
   <BR>
   <li><B>TShark</B></li>
     <ul>
-      <li>You can extract ip addresses from a Pcap using Tshark: <a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file"></a>></li>
+      <li>You can extract ip addresses from a Pcap using Tshark: <a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file"></a>>You can extract ip addresses from a Pcap using Tshark</li>
       <BR>
 To extract just the destination ip, type the following command:
     
