@@ -174,6 +174,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <img src="images/ip_Screenshot 2023-11-09 104928.png">
 <BR>
 <BR>
+</details>
 <details>
 <summary>[Pcaps]</summary>
 <ul>
@@ -201,6 +202,8 @@ To extract both the destination ip and the source ip, type the following command
 <BR>
 <BR>
 
+
+
 Zeek: 
 
 John Hubbard has a fantastic install video here: 
@@ -211,54 +214,6 @@ https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard
 
  
 
- 
-
--To export logs from a Pcap into Zeek format, type the following syntax (r is for read): 
-
- 
-
- 
-
-RITA (Real Intelligence Threat Analytics): 
-
-https://www.activecountermeasures.com/free-tools/rita 
-
-M.E.K.: Note: RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way. 
-
-Chris Brenton has a fantastic install video here: 
-
-https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures 
-
- 
-
--To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are: 
-
- 
-
- 
-
--Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name): 
-
- 
-
- 
-
--RITA will tell you when it’s done: 
-
- 
-
- 
-
-
-
-
-
-
-
-
-
-  
-</details>
 
 
 </body>
