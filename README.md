@@ -202,7 +202,6 @@ To extract both the destination ip and the source ip, type the following command
 <BR>
 <img src="images/TShark_Screenshot 2023-03-16 211435.jpg">
 <BR>
-<BR>
 </ul>
 <BR>
 <li><B>Zeek</B></li>
@@ -211,6 +210,9 @@ John Hubbard has a fantastic install video here: https://www.youtube.com/watch?v
 <BR>
 <BR>
 Zeek installs itself here: 
+<img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg">
+<BR>
+<BR>
 
  
 
