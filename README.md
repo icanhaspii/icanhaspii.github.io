@@ -190,9 +190,7 @@ You can try the following “Recipe” in CyberChef to decode:
   <BR>
   <li><B>TShark</B></li>
     <ul>
-      <li><a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file">You can extract ip addresses from a Pcap using Tshark</a></li>
-      <BR>
-To extract just the destination ip, type the following command:
+      <li><a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file">You can extract ip addresses from a Pcap using Tshark</a></li> To extract just the destination ip, type the following command:
 <BR>
 <img src="images/TShark_Screenshot 2023-03-16 211016.jpg">
 <BR>
@@ -206,11 +204,7 @@ To extract both the destination ip and the source ip, type the following command
 <BR>
 <li><B>Zeek</B></li>
   <ul>
-<li>John Hubbard has a fantastic install video here:</li><a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard"></a></li>
-
-
-<a href="John Hubbard has a fantastic install video here:" target="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard">Visit W3Schools!</a>
-    
+<li><a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard">John Hubbard has a fantastic install video here:</a></li>
 <BR>
 <BR>
 Zeek installs itself here: 
