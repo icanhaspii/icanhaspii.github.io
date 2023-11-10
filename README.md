@@ -175,6 +175,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <BR>
 <BR>
 </ul>
+  </ul>
 </details>
 <details>
 <summary>[Pcaps]</summary>
