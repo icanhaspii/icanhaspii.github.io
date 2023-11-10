@@ -221,6 +221,70 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
 
 
 
+<p>
+
+ 
+
+dmesg command: 
+
+M.E.K.: Note: Run after you launch an app that you want to find out more about, errors and such. 
+
+The dmesg command is a Linux utility that displays kernel-related messages retrieved from the kernel ring buffer. The ring buffer stores information about hardware, device driver initialization, and messages from kernel modules that take place during system startup. 
+
+https://phoenixnap.com/kb/dmesg-linux 
+
+https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux 
+
+https://linuxize.com/post/dmesg-command-in-linux 
+
+ 
+
+ 
+
+ 
+
+readelf command: 
+
+readelf displays information about one or more ELF format object files.  The options control what particular information to display. 
+
+ 
+
+elffile... are the object files to be examined.  32-bit and 64-bit ELF files are supported, as are archives containing ELF files. 
+
+ 
+
+This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD library, so if there is a bug in BFD then readelf will not be affected. 
+
+https://man7.org/linux/man-pages/man1/readelf.1.html 
+
+ 
+
+ 
+
+realpath command: 
+
+realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries. (See realpath(3) for more information.) 
+
+Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned. 
+
+ 
+
+https://linux.die.net/man/1/realpath 
+
+ 
+
+ 
+
+
+
+
+</>
+
+
+
+
+
+
 
 
 </body>
