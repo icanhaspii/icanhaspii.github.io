@@ -9,7 +9,6 @@
 <h1>icanhaspii-CTF CheatSheet</h1>
 <details>
   <summary>[Linux Analysis Commands]</summary>
-</details>
   <ul>
   <li><B>file</B></li>
     <ul>
