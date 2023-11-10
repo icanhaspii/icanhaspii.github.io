@@ -33,7 +33,7 @@
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg">
 <BR>
 <BR>
-You can even combine strings and grep:
+You can also combine strings and grep:
 <BR>
 <BR>
 <img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
@@ -174,6 +174,82 @@ You can try the following “Recipe” in CyberChef to decode:
 <img src="images/ip_Screenshot 2023-11-09 104928.png">
 <BR>
 <BR>
+
+  <summary>[Pcaps]</summary>
+<ul>
+  <li><B>Strings</B></li>
+    <ul>
+      <li>You can run strings on a Pcap!  Below are a couple examples (I like to pipe my results to a .txt file for easier review):</li>
+      <BR>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png">
+      <BR>
+    </ul>
+  <BR>
+  <li><B>TShark</B></li>
+    <ul>
+      <li>You can extract ip addresses from a Pcap using Tshark: <a href>https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file</li></a>>
+      <BR>
+To extract just the destination ip, type the following command:
+    
+<img src="images/TShark_Screenshot 2023-03-16 211016.jpg">
+      <BR>
+
+To extract both the destination ip and the source ip, type the following command:
+<BR>
+<BR>
+<img src="images/TShark_Screenshot 2023-03-16 211435.jpg">
+<BR>
+<BR>
+
+Zeek: 
+
+John Hubbard has a fantastic install video here: 
+
+https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard 
+
+-Zeek installs itself here: 
+
+ 
+
+ 
+
+-To export logs from a Pcap into Zeek format, type the following syntax (r is for read): 
+
+ 
+
+ 
+
+RITA (Real Intelligence Threat Analytics): 
+
+https://www.activecountermeasures.com/free-tools/rita 
+
+M.E.K.: Note: RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way. 
+
+Chris Brenton has a fantastic install video here: 
+
+https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures 
+
+ 
+
+-To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are: 
+
+ 
+
+ 
+
+-Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name): 
+
+ 
+
+ 
+
+-RITA will tell you when it’s done: 
+
+ 
+
+ 
+
+
 
 
 
