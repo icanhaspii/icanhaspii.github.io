@@ -213,7 +213,8 @@ Zeek installs itself here:
 <img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg">
 <BR>
 <BR>
-To export logs from a Pcap into Zeek format, type the following syntax (r is for read): 
+To export logs from a Pcap into Zeek format, type the following syntax (r is for read):
+<BR>
 <img src="images/Zeek_Screenshot 2023-03-24 201006.jpg">
 <BR>
 <BR>
