@@ -1,6 +1,5 @@
 <html lang="en-US">
 <head>
-<title>icanhaspii CTF STUFF</title>
 <meta name="Keywords" content="CTF, Tutorials, Programming, Web Development, Training, Learning, Linux">
 <meta name="Description" content="Well organized and easy to understand CTF and Linux tutorial with lots of examples.">
 <meta property="og:description" content="Well organized and easy to understand CTF and Linux tutorial with lots of examples.">
