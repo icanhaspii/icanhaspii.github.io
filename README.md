@@ -524,9 +524,6 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
 
 
 
-
-
-
 </body>
 </html>
 
