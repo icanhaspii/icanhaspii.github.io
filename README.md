@@ -174,7 +174,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <BR>
 <BR>
 </ul>
-  </ul>
+<BR CLEAR="ALL">
 
 <ul>
 <li><B>realpath</B></li>
