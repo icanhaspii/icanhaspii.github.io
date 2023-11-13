@@ -174,7 +174,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <BR>
 <BR>
 </ul>
-<BR CLEAR="ALL">
+<BR>
 
 <ul>
 <li><B>realpath</B></li>
@@ -183,7 +183,6 @@ You can try the following “Recipe” in CyberChef to decode:
 	  
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
 <BR>
-</ul>
 
 
 
