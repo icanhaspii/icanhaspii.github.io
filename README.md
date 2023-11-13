@@ -176,7 +176,7 @@ You can try the following “Recipe” in CyberChef to decode:
 </ul>
 <BR>
 
-<ul>
+
 <li><B>realpath</B></li>
     <ul>
       <li><p class="c4"><span class="c38 c48">realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries.</span></p><p class="c4"><span class="c2">Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</span>
