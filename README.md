@@ -204,8 +204,6 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
-</li>
-</ul>
 <ul>
   <li><B>chmod:</B></li>
 <ul>
