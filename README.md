@@ -186,9 +186,28 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
+<li><B>realpath</B></B></li>
+<ul>
+<li>realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries.</span></p><p class="c4"><span class="c2">Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <li><B>SSH</B></li>
 <ul>
 <li><p class="c4"><span class="c38 c48">To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:</span></li></ul>
+
 <ul class="c8 lst-kix_list_29-0"><li class="c0 li-bullet-0"><span class="c9">To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:</span></p><ul class="c8 lst-kix_list_31-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf">https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf</a></span></li><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://opensource.com/article/20/9/ssh">https://opensource.com/article/20/9/ssh</a>
 
 <p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.20px; height: 362.13px;"><img alt="" src="images/image181.jpg" style="width: 706.20px; height: 362.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c4"><span class="c2">&#9492;&#9472;# ssh -o HostKeyAlgorithms\ ssh-rsa </span><span class="c11"><a class="c6" href="mailto:TCM@10.10.124.96">TCM@10.10.124.96</a></span></p><p class="c3"><span class="c2"></span></p><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 711.60px; height: 590.00px;"><img alt="" src="images/image182.png" style="width: 711.60px; height: 590.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><BR Clear="ALL">
