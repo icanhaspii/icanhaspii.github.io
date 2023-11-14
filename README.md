@@ -216,6 +216,7 @@ You can try the following “Recipe” in CyberChef to decode:
 
 <p class="c4"><span class="c2">&#9492;&#9472;# chown kali NTUSER.DAT.dat
 
+</span></li></ul>
 
 
 
