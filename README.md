@@ -196,7 +196,7 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
-<! --
+<!--
 <p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.20px; height: 362.13px;"><img alt="" src="images/image181.jpg" style="width: 706.20px; height: 362.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
 
 
