@@ -213,9 +213,6 @@ To give a file permissions so that a regular user can move it or edit it, you ca
 
 
 
-
-<!--
-
 <ul>
 <li><B>Bash</B></li>
 <ul>
@@ -249,8 +246,6 @@ To give a file permissions so that a regular user can move it or edit it, you ca
 
 
 
-
--->
 
 
 
