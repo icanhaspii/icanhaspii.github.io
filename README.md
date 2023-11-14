@@ -254,11 +254,7 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
-</ul>
 
-
-
-</details>
 <details>
 <summary>[Pcap Analysis]</summary>
 <ul>
