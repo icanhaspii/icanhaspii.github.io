@@ -193,9 +193,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf">https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf</a></span></li></ul>
 <BR>
 
-
-
-
+<a class="c6" href="https://opensource.com/article/20/9/ssh">https://opensource.com/article/20/9/ssh</a></span></li></ul>
 
 
 <!--
