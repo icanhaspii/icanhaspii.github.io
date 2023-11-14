@@ -191,7 +191,7 @@ You can try the following “Recipe” in CyberChef to decode:
 
 <li><B>SSH</B></li>
 <ul>
-<li>To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:
+<li>
 
 <ul class="c8 lst-kix_list_31-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf">https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf</a></span></li><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://opensource.com/article/20/9/ssh">https://opensource.com/article/20/9/ssh</a>
 
