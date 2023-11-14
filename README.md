@@ -208,16 +208,7 @@ Note: chmod +x (plus x) stands for execute.</span><p class="c3"><span class="c9"
 
 
 <li><B>chown</B></li>
-<ul>
-<li>realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries. Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</li></ul>
-	  
-<ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
-<BR>
-
-
-
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><li>To give a file permissions so that a regular user can move it or edit it, you can run the following:</li></ul></span></li></ul>
-
 
 <p class="c4"><span class="c2">&#9492;&#9472;# chown kali NTUSER.DAT.dat</span>
 
