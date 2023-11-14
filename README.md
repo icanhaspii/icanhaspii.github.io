@@ -184,6 +184,7 @@ You can try the following “Recipe” in CyberChef to decode:
 	  
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
 <BR>
+</ul>
 
 
 
@@ -191,7 +192,6 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
-<ul>
 <li><B>SSH</B></li>
 <ul>
 <li>To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:
