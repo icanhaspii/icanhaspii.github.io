@@ -235,7 +235,6 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
-</li>
 </ul>
 <ul>
 <li><B>grep</B></li>
