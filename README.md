@@ -244,8 +244,8 @@ To give a file permissions so that a regular user can move it or edit it, you ca
 <li>curl http://nidus-setup:8080<p class="c4 c5"><span class="c2">curl -X POST http://nidus-setup:8080/api/cooler -H &quot;Content-Type: application/json&quot; --data-binary &#39;{&quot;temperature&quot;:1000}&#39;<p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 711.00px; height: 170.33px;"><img alt="" src="images/image157.png" style="width: 711.00px; height: 170.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span>
 </p>
 
-
-
+</ul>
+</ul>
 
 
 
