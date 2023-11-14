@@ -208,7 +208,7 @@ Note: chmod +x (plus x) stands for execute.</span><p class="c3"><span class="c9"
 
 
 <li><B>chown:</B></li>
-<ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11">To give a file permissions so that a regular user can move it or edit it, you can run the following:</span></ul>
+<ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11">To give a file permissions so that a regular user can move it or edit it, you can run the following:
 
 <p class="c4"><span class="c2">&#9492;&#9472;# chown kali NTUSER.DAT.dat</span>
 
