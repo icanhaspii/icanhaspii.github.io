@@ -193,6 +193,16 @@ You can try the following “Recipe” in CyberChef to decode:
 
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://opensource.com/article/20/9/ssh">https://opensource.com/article/20/9/ssh</a></span></li></ul>
 
+<BR>
+<img src="images/image181.jpg">
+
+
+<p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.20px; height: 362.13px;"><img alt="" src="images/image181.jpg" style="width: 706.20px; height: 362.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+
+
+
+
+
 
 <!--
 <ul class="c8 lst-kix_list_31-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf">https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf</a></span></li><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://opensource.com/article/20/9/ssh">https://opensource.com/article/20/9/ssh</a>
