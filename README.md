@@ -311,7 +311,7 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
 
 <p class="c3"><span class="c2"></span></p><ul class="c8 lst-kix_list_43-0"><li class="c0 li-bullet-0"><span class="c9">tcpflow:</span></li></ul><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 304.00px; height: 67.00px;"><img alt="" src="images/image183.png" style="width: 304.00px; height: 67.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 410.00px; height: 225.00px;"><img alt="" src="images/image209.png" style="width: 410.00px; height: 225.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c3"><span class="c2"></span></li></ul>
 
-
+</details>
 
 
 
