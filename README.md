@@ -190,6 +190,10 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
+</li>
+</ul>
+<ul>
+
 <li><B>SSH</B></li>
 <ul>
 <li>To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:
