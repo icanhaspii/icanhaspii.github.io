@@ -177,16 +177,9 @@ You can try the following “Recipe” in CyberChef to decode:
 <BR>
 
 
+
+
 <li><B>realpath</B></li>
-    <ul>
-      <li><p class="c4"><span class="c38 c48">realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries.</span></p><p class="c4"><span class="c2">Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</span>
-	  
-<ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
-<BR>
-
-
-
-<li><B>realpath</B></B></li>
 <ul>
 <li>realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries.</span></p><p class="c4"><span class="c2">Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</li>
 
@@ -196,6 +189,16 @@ You can try the following “Recipe” in CyberChef to decode:
 
 
 
+
+
+
+
+<li><B>realpath</B></li>
+    <ul>
+      <li><p class="c4"><span class="c38 c48">realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries.</span></p><p class="c4"><span class="c2">Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.</span>
+	  
+<ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
+<BR>
 
 
 
