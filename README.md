@@ -1,6 +1,5 @@
 # icanhaspii-CTF CheatSheet
 ## These are my CTF Hacks!
-### I hope you enjoy!
 <br>
 <details markdown>
   <br>
