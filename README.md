@@ -95,11 +95,11 @@ href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - chmod]</summary>
-Note: chmod +x (plus x) stands for execute.<br><br>
-Question:<br><br>
-I want to write the Ubuntu analogue of a &quot;batch file&quot; (a shell script). But I don&#39;t know how to use chmod +x<br><br>
-Answer:<br><br>
+  <summary>[Linux Analysis Commands - SSH]</summary>
+To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
+https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf<br><br>
+https://opensource.com/article/20/9/ssh<br><br>
+<img src="images/image181.jpg"><br><br>
 </details>
 
 <details markdown>
