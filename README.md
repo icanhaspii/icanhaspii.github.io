@@ -185,7 +185,7 @@ You can try the following “Recipe” in CyberChef to decode:
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a></span></li></ul>
 <BR>
 
-
+<div>
 
 <li><B>SSH</B></li>
 
@@ -196,6 +196,10 @@ You can try the following “Recipe” in CyberChef to decode:
 <p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.20px; height: 362.13px;"><img alt="" src="images/image181.jpg" style="width: 706.20px; height: 362.13px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
 
 
+</div>
+
+
+<div>
 
 <li><B>chmod:</B></li>
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11">
@@ -204,6 +208,9 @@ Note: chmod +x (plus x) stands for execute.</span><p class="c3"><span class="c9"
 <p class="c4"><span class="c2">sudo chmod +x /usr/share/testfolder/aFile</span></p><ul class="c8 lst-kix_list_68-0 start"><li class="c0 li-bullet-0"><span class="c30"><a class="c6" href="https://www.google.com/url?q=https://askubuntu.com/questions/443789/what-does-chmod-x-filename-do-and-how-do-i-use-it&amp;sa=D&amp;source=editors&amp;ust=1699590511449077&amp;usg=AOvVaw1sGSbZrubKpsssvXd2MSCM">https://askubuntu.com/questions/443789/what-does-chmod-x-filename-do-and-how-do-i-use-it</a></span></li></ul><p class="c3"><span class="c2"></span></p><p class="c4"><span class="c9">Question:</span></p><p class="c4"><span class="c10">What is the difference between chmod u+x and just chmod +x? I have seen a ton of tutorials that say to use u+x to make scripts executable. However, omitting the u doesn&#39;t seem to have any effect.</span></p><p class="c4"><p class="c4"><span class="c9">Answer:</span></p><p class="c4"><span class="c10">The man page of chmod covers that.</span></p><ul class="c8 lst-kix_list_4-0"><li class="c0 li-bullet-0"><span class="c29">u</span><span class="c10">&nbsp;stands for user.</span></li><li class="c0 li-bullet-0"><span class="c29">g</span><span class="c10">&nbsp;stands for group.</span></li><li class="c0 li-bullet-0"><span class="c29">o</span><span class="c10">&nbsp;stands for others.</span></li><li class="c0 li-bullet-0"><span class="c29">a</span><span class="c10">&nbsp;stands for all.</span></li></ul><p class="c4"><span class="c10">That means that chmod u+x somefile will grant only the owner of that file execution permissions whereas chmod +x somefile is the same as chmod a+x somefile.</span></p><ul class="c8 lst-kix_list_68-0"><li class="c0 li-bullet-0"><span class="c11"><a class="c6" href="https://www.google.com/url?q=https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x&amp;sa=D&amp;source=editors&amp;ust=1699590511450362&amp;usg=AOvVaw1bxPjNQLXdTcu953xI58Px">https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x</a></span>
 <BR>
 <BR>
+
+</div>
+
 
 
 <li><B>chown:</B></li>
