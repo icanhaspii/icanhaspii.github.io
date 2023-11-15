@@ -207,11 +207,11 @@ Note: chmod +x (plus x) stands for execute.</span><p class="c3"><span class="c9"
 
 
 
-
+<blockquote>
 <li><B>chown:</B></li>
 <ul class="c8 lst-kix_list_16-0 start"><li class="c0 li-bullet-0"><span class="c11">
 To give a file permissions so that a regular user can move it or edit it, you can run the following:</span><p class="c3"><span class="c9"></span></p><p class="c4"><span class="c9">&#9492;&#9472;# chown kali NTUSER.DAT.dat</span></p><p class="c4"><span class="c10">I want to write the Ubuntu analogue of a &quot;batch file&quot; (a shell script). But I don&#39;t know how to use chmod +x </span><span class="c29">filename</span><span class="c10">&nbsp;command to make it so that the script can be run. Nor do I know where to use it.</span></ul>
-
+</blockquote>
 
 
 
