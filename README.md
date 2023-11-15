@@ -1,6 +1,5 @@
 # icanhaspii-CTF CheatSheet
 ## These are my CTF Hacks!
-<br>
 <details markdown>
   <br>
   <summary>[Linux Analysis Commands - file]</summary>
