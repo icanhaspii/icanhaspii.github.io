@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>icanhaspii-CTF CheatSheet</h1>
-<details>
+<details markdown>
   <summary>[Linux Analysis Commands]</summary>
   <ul>
   <li><B>file</B></li>
