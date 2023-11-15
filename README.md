@@ -124,6 +124,9 @@ o stands for others.<br><br>
 a stands for all.<br><br>
 That means that chmod u+x somefile will grant only the owner of that file execution permissions whereas chmod +x somefile is the same as chmod a+x somefile.<br><br>
 https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x<br><br>
+
+https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x <a href="https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x" target="_blank">https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x</a><br><br>
+
 </details>
 
 
