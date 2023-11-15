@@ -1,3 +1,126 @@
+# icanhaspii-CTF CheatSheet
+## These are my CTF Hacks!
+### I hope you enjoy!
+<br>
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - file]</summary>
+Run this to determine what type of file you are dealing with:<br><br>
+<img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - binwalk]</summary>
+Run this to view a summary of the file contents:<br><br>
+<img src="images/BinWalk_Screenshot 2023-10-03 203227.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - strings]</summary>
+Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:<br><br>
+<img src="images/Strings_Screenshot 2023-05-12 172558.jpg"><br><br>
+You can also combine strings and grep:<br><br>
+<img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - java -jar]</summary>
+The java -jar command will open a .jar file:<br><br>
+<img src="images\Java_JarStegSolveHowTo.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - java]</summary>
+The java command will open a .java file:<br><br>
+<img src="images/Java_Screenshot 2022-06-15 085349_Edited.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - base64]</summary>
+The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:<br><br>
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=<br><br>
+2. Type the following into your Linux command prompt to echo/print to screen:<br><br>
+echo 'Umlja19SMGxsM2Q=' | base64 -d<br><br>
+3. Hit ENTER<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 172521.png"><br><br>
+4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded b64 in standard flag format to your screen:<br><br>
+echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 180945.png"><br><br>
+-Here’s another way:<br><br>
+1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=<br><br>
+2. Type the following into your Linux command prompt:<br><br>
+Base64 –d<br><br>
+3. Hit ENTER<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 173111.png"><br><br>
+4. At the prompt, paste in your base64 encoded string:<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 173249.png"><br><br>
+5. Hit ENTER again:<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 173640.png"><br><br>
+6. Finally, hit Control-D on your keyboard:<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 172847.png"><br><br>
+-And yet another method:<br><br>
+1. Save your base64 encoded string into a text editor:<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 174625.png"><br><br>
+2. Type the following into your Linux command prompt to echo/print to screen:<br><br>
+base64 -d dns.txt >decoded.txt<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 174546.png"><br><br>
+3. Open your new file, “decoded.txt”:<br><br>
+<img src="images/Base64_Screenshot 2023-11-08 174720.png"><br><br>
+If you run across encoding similar to below:<br><br>
+IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String<br><br>
+[IO.Compression.CompressionMode]::Decompress<br><br>
+You can try the following “Recipe” in CyberChef to decode:<br><br>
+(a)From_Base64('A-Za-z0-9%2B/%3D',true,false)<br><br>
+(b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)<br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - ifconfig]</summary>
+To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
+<img src="images/ip_Screenshot 2023-11-09 105007.png"><br><br>
+<img src="images/ip_Screenshot 2023-11-09 104951.png"><br><br>
+<img src="images/ip_Screenshot 2023-11-09 104928.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - realpath]</summary>
+realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries. Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.<br><br>
+href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - SSH]</summary>
+To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
+<img src="images/ip_Screenshot 2023-11-09 105007.png"><br><br>
+<img src="images/ip_Screenshot 2023-11-09 104951.png"><br><br>
+<img src="images/ip_Screenshot 2023-11-09 104928.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - chmod]</summary>
+Note: chmod +x (plus x) stands for execute.<br><br>
+Question:<br><br>
+I want to write the Ubuntu analogue of a &quot;batch file&quot; (a shell script). But I don&#39;t know how to use chmod +x<br><br>
+Answer:<br><br>
+</details>
+
+
+
+
+
+
+
+<!--
+
 <html lang="en-US">
 <head>
 <meta name="Keywords" content="CTF, Tutorials, Programming, Web Development, Training, Learning, Linux">
@@ -817,4 +940,9 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
 
 </body>
 </html>
+
+-->
+
+
+
 
