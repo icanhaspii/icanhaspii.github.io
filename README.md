@@ -95,15 +95,6 @@ href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - SSH]</summary>
-To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
-<img src="images/ip_Screenshot 2023-11-09 105007.png"><br><br>
-<img src="images/ip_Screenshot 2023-11-09 104951.png"><br><br>
-<img src="images/ip_Screenshot 2023-11-09 104928.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
   <summary>[Linux Analysis Commands - chmod]</summary>
 Note: chmod +x (plus x) stands for execute.<br><br>
 Question:<br><br>
@@ -111,7 +102,29 @@ I want to write the Ubuntu analogue of a &quot;batch file&quot; (a shell script)
 Answer:<br><br>
 </details>
 
-
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - chmod]</summary>
+chmod +x<br><br>
+Note: chmod +x (plus x) stands for execute.<br><br>
+Question:<br><br>
+I want to write the Ubuntu analogue of a "batch file" (a shell script). But I don't know how to use chmod +x filename command to make it so that the script can be run. Nor do I know where to use it.<br><br>
+Answer:<br><br>
+chmod +x on a file (your script) only means, that you'll make it executable. Right click on your script and chose Properties -> Permissions -> Allow executing file as program, leaves you with the exact same result as the command in terminal.<br><br>
+If a file you want to change permissions on is located within the systems directory you may need to be root, like so: (be careful, while using sudo command)<br><br>
+sudo chmod +x /usr/share/testfolder/aFile<br><br>
+https://askubuntu.com/questions/443789/what-does-chmod-x-filename-do-and-how-do-i-use-it<br><br>
+Question:<br><br>
+What is the difference between chmod u+x and just chmod +x? I have seen a ton of tutorials that say to use u+x to make scripts executable. However, omitting the u doesn't seem to have any effect.<br><br>
+Answer:<br><br>
+The man page of chmod covers that.<br><br>
+u stands for user.<br><br>
+g stands for group.<br><br>
+o stands for others.<br><br>
+a stands for all.<br><br>
+That means that chmod u+x somefile will grant only the owner of that file execution permissions whereas chmod +x somefile is the same as chmod a+x somefile.<br><br>
+https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x<br><br>
+</details>
 
 
 
