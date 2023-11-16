@@ -246,7 +246,7 @@ Multitap ABC should not be confused with T9 predictive text. 'DCODE' is written 
 <a href="https://www.aperisolve.com" target="_blank">https://www.aperisolve.com</a><br>
 <a href="https://www.aperisolve.com/cheatsheet" target="_blank">https://www.aperisolve.com/cheatsheet</a><br>
 <a href="https://www.dcode.fr/spectral-analysis" target="_blank">https://www.dcode.fr/spectral-analysis</a><br>
-<a href="https://gqrx.dk" target="_blank"></a>https://gqrx.dk<br>
+<a href="https://gqrx.dk" target="_blank"></a>https://gqrx.dk</a><br>
 </details>
 
 
