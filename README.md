@@ -202,7 +202,6 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
   <br>
   <summary>[Pcap Analysis - RITA]</summary>
 RITA (Real Intelligence Threat Analytics):<br><br>
-You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
 <a href="https://www.activecountermeasures.com/free-tools/rita" target="_blank">RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way</a><br><br>
 <a href="https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures" target="_blank">Chris Brenton has a fantastic install video</a><br><br>
 To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
