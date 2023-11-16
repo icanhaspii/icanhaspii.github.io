@@ -228,8 +228,26 @@ Multitap ABC should not be confused with T9 predictive text. 'DCODE' is written 
 <a href="https://www.audacityteam.org/download" target="_blank">https://www.audacityteam.org/download</a><br>
 <a href="https://www.sonicvisualiser.org/download.html" target="_blank">https://www.sonicvisualiser.org/download.html</a><br>
 <a href="http://dialabc.com/sound/detect/index.html" target="_blank">http://dialabc.com/sound/detect/index.html</a><br>
+<a href="http://www.polar-electric.com/DTMF/Index.html" target="_blank">http://www.polar-electric.com/DTMF/Index.html"</a><br>
+<a href="https://twitter.com/_johnhammond/status/1244277165316857857?lang=en" target="_blank">https://twitter.com/_johnhammond/status/1244277165316857857?lang=en</a><br>
+<a href="https://forums.radioreference.com/threads/twotonedetect-beta.120010" target="_blank">https://forums.radioreference.com/threads/twotonedetect-beta.120010</a><br>
+<a href="https://onlinetonegenerator.com/dtmf.html" target="_blank">https://onlinetonegenerator.com/dtmf.html</a><br>
+<a href="https://www.venea.net/web/dtmf_generator" target="_blank">https://www.venea.net/web/dtmf_generator</a><br>
+<a href="https://github.com/ribt/dtmf-decoder" target="_blank">https://github.com/ribt/dtmf-decoder</a><br>
+<a href="https://www.dcode.fr/multitap-abc-cipher" target="_blank">https://www.dcode.fr/multitap-abc-cipher</a><br>
+<a href="https://www.dcode.fr/t9-cipheraudi" target="_blank">https://www.dcode.fr/t9-cipheraudi</a><br>
+<a href="https://www.windows7download.com/win7-dtmf-tone-decoder/mgbuqfct.html" target="_blank">https://www.windows7download.com/win7-dtmf-tone-decoder/mgbuqfct.html</a><br> 
+<a href="http://www.windows7download.com/win7-dtmf-tone-decoder/download-mgbuqfct.html" target="_blank">http://www.windows7download.com/win7-dtmf-tone-decoder/download-mgbuqfct.html</a><br> 
+<a href="https://www.windows7download.com/win7-dtmf-tone-decoder/download-mgbuqfct.html" target="_blank">https://www.windows7download.com/win7-dtmf-tone-decoder/download-mgbuqfct.html</a><br> 
+<a href="https://dtmf.netlify.app" target="_blank">https://dtmf.netlify.app</a><br>
+<a href="https://jpinsoft.net/deepsound/download.aspx" target="_blank">https://jpinsoft.net/deepsound/download.aspx</a><br>
+<a href="https://www.youtube.com/watch?v=VZbZa99ocPU&ab_channel=mdthib" target="_blank">https://www.youtube.com/watch?v=VZbZa99ocPU&ab_channel=mdthib</a><br>
+<a href="https://www.youtube.com/watch?v=rAGkm4pv44s" target="_blank">https://www.youtube.com/watch?v=rAGkm4pv44s</a><br>
+<a href="https://www.aperisolve.com" target="_blank">https://www.aperisolve.com</a><br>
+<a href="https://www.aperisolve.com/cheatsheet" target="_blank">https://www.aperisolve.com/cheatsheet</a><br>
+<a href="https://www.dcode.fr/spectral-analysis" target="_blank">https://www.dcode.fr/spectral-analysis</a><br>
+<a href="https://gqrx.dk" target="_blank"></a>https://gqrx.dk<br>
 </details>
-
 
 
 
