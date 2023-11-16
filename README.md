@@ -257,13 +257,11 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 </details>
 
 <details markdown>
-  <br>
   <summary>[Large Number/Big Integer/Big Number converter]</summary>
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
 </details>
 
 <details markdown>
-  <br>
   <summary>[Stego - Some Resources]</summary>
 <a href="https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography" target="_blank"></a>https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography<br>
 <a href="https://www.kali.org/tools/steghide" target="_blank">https://www.kali.org/tools/steghide</a><br>
