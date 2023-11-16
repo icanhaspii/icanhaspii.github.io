@@ -251,15 +251,14 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 </details>
 
 <details markdown>
-  <br>
-  <summary>[Audio - Extract Morse Code from an audio file:]</summary>
+  <summary>[Audio - Extract Morse Code from an audio file]</summary>
 <a href="https://morsecode.world/international/decoder/audio-decoder-adaptive.html" target="_blank">https://morsecode.world/international/decoder/audio-decoder-adaptive.html</a><br>
 <a href="https://databorder.com/transfer/morse-sound-receiver" target="_blank">https://databorder.com/transfer/morse-sound-receiver</a><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Large Number/Big Integer/Big Number converter:]</summary>
+  <summary>[Large Number/Big Integer/Big Number converter]</summary>
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
 </details>
 
