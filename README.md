@@ -223,8 +223,8 @@ TCPflow is a command-line tool for processing streams.<br>
 <details markdown>
   <br>
   <summary>[Audio Analysis - Decoders/Analyzers]</summary>
-*Note from Dcode regarding T9 vs Multitap Confusion:*<br>
-*Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.*<br>
+Note from Dcode regarding T9 vs Multitap Confusion:<br>
+Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
 <a href="https://www.audacityteam.org/download" target="_blank">https://www.audacityteam.org/download</a><br>
 <a href="https://www.sonicvisualiser.org/download.html" target="_blank">https://www.sonicvisualiser.org/download.html</a><br>
 <a href="http://dialabc.com/sound/detect/index.html" target="_blank">http://dialabc.com/sound/detect/index.html</a><br>
