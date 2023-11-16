@@ -222,7 +222,7 @@ TCPflow is a command-line tool for processing streams.<br>
 
 <details markdown>
   <br>
-  <summary>[Audio Decoders/Analyzers]</summary>
+  <summary>[Audio - Decoders/Analyzers]</summary>
 Note from Dcode regarding T9 vs Multitap Confusion:<br>
 Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
 <a href="https://twitter.com/_johnhammond/status/1244277165316857857?lang=en" target="_blank">https://twitter.com/_johnhammond/status/1244277165316857857?lang=en</a><br><br>
@@ -262,7 +262,36 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
 </details>
 
-
+<details markdown>
+  <br>
+  <summary>[Stego - Some Resources]</summary>
+<a href="https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography" target="_blank"></a>https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography<br>
+<a href="https://www.kali.org/tools/steghide" target="_blank">https://www.kali.org/tools/steghide</a><br>
+<a href="https://steghide.sourceforge.net" target="_blank">https://steghide.sourceforge.net</a><br>
+<a href="https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux" target="_blank">https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux</a><br>
+<a href="https://stegonline.georgeom.net/upload" target="_blank">https://stegonline.georgeom.net/upload</a><br>
+<a href="http://magiceye.ecksdee.co.uk" target="_blank">http://magiceye.ecksdee.co.uk</a><br>
+<a href="https://manytools.org/hacker-tools/steganography-encode-text-into-image" target="_blank">https://manytools.org/hacker-tools/steganography-encode-text-into-image</a><br>
+<a href="https://www.mobilefish.com/services/steganography/steganography.php" target="_blank">https://www.mobilefish.com/services/steganography/steganography.php</a><br>
+<a href="http://stylesuxx.github.io/steganography" target="_blank">http://stylesuxx.github.io/steganography</a><br>
+<a href="https://futureboy.us/stegano" target="_blank">https://futureboy.us/stegano</a><br>
+<a href="https://neatnik.net/steganographr" target="_blank">https://neatnik.net/steganographr</a><br>
+<a href="https://wiki.bi0s.in/steganography/zsteg" target="_blank">https://wiki.bi0s.in/steganography/zsteg</a><br>
+<a href="https://github.com/zed-0xff/zsteg" target="_blank">https://github.com/zed-0xff/zsteg</a><br>
+<a href="https://github.com/ragibson/Steganography#WavSteg" target="_blank">https://github.com/ragibson/Steganography#WavSteg</a><br>
+<a href="https://github.com/ragibson/Steganography#lsbsteg" target="_blank">https://github.com/ragibson/Steganography#lsbsteg</a><br>
+<a href="https://github.com/ragibson/Steganography#stegdetect" target="_blank">https://github.com/ragibson/Steganography#stegdetect</a><br>
+<a href="https://github.com/pavanchhatpar/wav-steg-py" target="_blank">https://github.com/pavanchhatpar/wav-steg-py</a><br>
+<a href="https://0xrick.github.io/lists/stego" target="_blank">https://0xrick.github.io/lists/stego</a><br>
+<a href="https://www.linuxlinks.com/wavsteg-uses-least-significant-bit-steganography" target="_blank">https://www.linuxlinks.com/wavsteg-uses-least-significant-bit-steganography</a><br>
+<a href="https://www.abc.se/~re/Coagula/Coagula.html" target="_blank">https://www.abc.se/~re/Coagula/Coagula.html</a><br>
+<a href="https://www.stenge.info/post/steganography" target="_blank">https://www.stenge.info/post/steganography</a><br>
+<a href="https://cheatography.com/aleksandrm/cheat-sheets/coagula-cheat-sheet" target="_blank">https://cheatography.com/aleksandrm/cheat-sheets/coagula-cheat-sheet</a><br>
+<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank">https://github.com/zardus/ctf-tools/blob/master/stegsolve/install</a><br>
+<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank">http://www.caesum.com/handbook/Stegsolve.jar</a><br>
+<a href="https://www.hanynet.com/isteg" target="_blank">https://www.hanynet.com/isteg</a><br>
+<a href="https://github.com/rafiibrahim8/iSteg" target="_blank">https://github.com/rafiibrahim8/iSteg</a><br><br>
+</details>
 
 
 
