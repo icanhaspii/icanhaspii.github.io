@@ -179,9 +179,6 @@ You can run strings on a Pcap! Below are a couple examples (I like to pipe my re
 <details markdown>
   <br>
   <summary>[Pcap Analysis - TShark]</summary>
-Strings<br><br>
-You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
-<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
 <a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file" target="_blank">You can extract ip addresses from a Pcap using Tshark</a><br><br>
 To extract just the destination ip, type the following command:<br><br>
 <img src="images/TShark_Screenshot 2023-03-16 211016.jpg"><br><br>
