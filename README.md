@@ -139,10 +139,10 @@ To give a file permissions so that a regular user can move it or edit it, you ca
 Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.<br><br>
 <a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners" target="_blank">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners</a><br><br>
 Some of the main delimiters (terminators or redirectors) for Bash commands are as follows:<br><br>
-whoami; whoami<br><br>
-whoami|<br><br>
-> (output to)<br><br>
-|| (double pipe)<br><br>
+whoami; whoami<br>
+whoami|<br>
+> (output to)<br>
+|| (double pipe)<br>
 </details>
 
 
