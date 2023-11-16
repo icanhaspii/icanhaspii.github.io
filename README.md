@@ -291,7 +291,17 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://github.com/rafiibrahim8/iSteg" target="_blank">https://github.com/rafiibrahim8/iSteg</a><br><br>
 </details>
 
-
+<details markdown>
+  <summary>[Stego - iSteg]</summary>
+<a href="https://github.com/rafiibrahim8/iSteg" target="_blank"></a>https://github.com/rafiibrahim8/iSteg<br>
+1. Navigated to: https://github.com/rafiibrahim8/iSteg/releases/tag/v2.1.<br>
+2. Downloaded the file: iSteg-v2.1_GUI.jar.<br>
+3. Ran chmod +x on the download file to give it executable permissions.<br>
+└─# chmod +x iSteg-v2.1_GUI.jar<br>
+4. Launched the program in Java:<br>
+└─# java -jar iSteg-v2.1_GUI.jar<br>
+5. Chose the hidden.png file and it opened to the flag, flag{YouFoundMe}:<br>
+</details>
 
 
 
