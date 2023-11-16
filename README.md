@@ -140,9 +140,9 @@ Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and
 <a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners" target="_blank">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners</a><br><br>
 Some of the main delimiters (terminators or redirectors) for Bash commands are as follows:<br><br>
 whoami; whoami<br><br>
-whoami|
-> (output to)
-|| (double pipe)
+whoami|<br><br>
+> (output to)<br><br>
+|| (double pipe)<br><br>
 </details>
 
 
