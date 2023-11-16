@@ -313,7 +313,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 1. wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar<br>
 2. chmod +x stegsolve.jar<br>
 3. Run by typing: java –jar stegsolve.jar (make sure you’re in the same directory)<br>
-4. Choose “File” --> Open and load your picture:<br>
+4. Choose “File” --> Open and load your picture:<br><br>
 <img src="images/image201.png"><br><br>
 </details>
 
