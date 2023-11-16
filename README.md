@@ -162,7 +162,9 @@ Count w/ grep:<br><br>
 <details markdown>
   <br>
   <summary>[Linux Analysis Commands - curl]</summary>
-The cURL command is a useful Linux tool for data transfer and connection troubleshooting. At the client side, cURL is powered by libcurl, a free URL transfer library.<br><br>
+Curl is useful in transferring data without user interaction.<br><br>
+curl http://nidus-setup:8080<br><br>
+curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/json" --data-binary '{"temperature":1000}'<br><br>
 <img src="images/image157.png"><br><br>
 </details>
 
