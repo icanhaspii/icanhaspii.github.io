@@ -196,7 +196,6 @@ To export logs from a Pcap into Zeek format, type the following syntax (r is for
 </details>
 
 <details markdown>
-  <br>
   <summary>[Pcap Analysis - RITA]</summary>
 RITA (Real Intelligence Threat Analytics):<br><br>
 <a href="https://www.activecountermeasures.com/free-tools/rita" target="_blank">RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way</a><br><br>
@@ -210,7 +209,6 @@ RITA will tell you when it’s done:<br><br>
 </details>
 
 <details markdown>
-  <br>
   <summary>[Pcap Analysis - TCPflow]</summary>
 TCPflow is a command-line tool for processing streams.<br>
 <a href="https://linux.die.net/man/1/tcpflow" target="_blank">https://linux.die.net/man/1/tcpflow</a><br>
@@ -221,7 +219,6 @@ TCPflow is a command-line tool for processing streams.<br>
 </details>
 
 <details markdown>
-  <br>
   <summary>[Audio - Decoders/Analyzers]</summary>
 Note from Dcode regarding T9 vs Multitap Confusion:<br>
 Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
@@ -306,7 +303,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 </details>
 
 <details markdown>
-  <summary>[StegSolve]</summary>
+  <summary>[Stego - StegSolve]</summary>
 <a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank"></a>https://github.com/zardus/ctf-tools/blob/master/stegsolve/install<br>
 <a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank"></a>http://www.caesum.com/handbook/Stegsolve.jar<br>
 1. wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar<br>
