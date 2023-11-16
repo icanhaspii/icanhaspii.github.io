@@ -305,7 +305,16 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <img src="images/image213.png"><br><br>
 </details>
 
-
+<details markdown>
+  <summary>[StegSolve]</summary>
+<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank"></a>https://github.com/zardus/ctf-tools/blob/master/stegsolve/install<br>
+<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank"></a>http://www.caesum.com/handbook/Stegsolve.jar<br>
+1. wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar<br>
+2. chmod +x stegsolve.jar<br>
+3. Run by typing: java –jar stegsolve.jar (make sure you’re in the same directory)<br>
+4. Choose “File” --> Open and load your picture:<br>
+<img src="images/image211.png"><br><br>
+</details>
 
 
 
