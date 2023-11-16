@@ -290,7 +290,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 <details markdown>
   <summary>[Stego - iSteg]</summary>
-<a href="https://github.com/rafiibrahim8/iSteg" target="_blank"></a>https://github.com/rafiibrahim8/iSteg<br>
+<a href="https://github.com/rafiibrahim8/iSteg" target="_blank">https://github.com/rafiibrahim8/iSteg</a><br>
 1. Navigated to: https://github.com/rafiibrahim8/iSteg/releases/tag/v2.1.<br>
 2. Downloaded the file: iSteg-v2.1_GUI.jar.<br>
 3. Ran chmod +x on the download file to give it executable permissions.<br>
@@ -304,8 +304,8 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 <details markdown>
   <summary>[Stego - StegSolve]</summary>
-<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank"></a>https://github.com/zardus/ctf-tools/blob/master/stegsolve/install<br>
-<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank"></a>http://www.caesum.com/handbook/Stegsolve.jar<br>
+<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank">https://github.com/zardus/ctf-tools/blob/master/stegsolve/install</a><br>
+<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank">http://www.caesum.com/handbook/Stegsolve.jar</a><br>
 1. wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar<br>
 2. chmod +x stegsolve.jar<br>
 3. Run by typing: java –jar stegsolve.jar (make sure you’re in the same directory)<br>
