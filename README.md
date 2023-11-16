@@ -222,7 +222,7 @@ TCPflow is a command-line tool for processing streams.<br>
 
 <details markdown>
   <br>
-  <summary>[Audio Analysis - Decoders/Analyzers]</summary>
+  <summary>[Audio Decoders/Analyzers]</summary>
 Note from Dcode regarding T9 vs Multitap Confusion:<br>
 Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
 <a href="https://www.audacityteam.org/download" target="_blank">https://www.audacityteam.org/download</a><br>
@@ -248,6 +248,33 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://www.dcode.fr/spectral-analysis" target="_blank">https://www.dcode.fr/spectral-analysis</a><br>
 <a href="https://gqrx.dk" target="_blank">https://gqrx.dk</a><br>
 </details>
+
+<details markdown>
+  <br>
+  <summary>[Audio - Extract Morse Code from an audio file:]</summary>
+<a href="https://morsecode.world/international/decoder/audio-decoder-adaptive.html" target="_blank">https://morsecode.world/international/decoder/audio-decoder-adaptive.html</a><br>
+<a href="https://databorder.com/transfer/morse-sound-receiver" target="_blank">https://databorder.com/transfer/morse-sound-receiver</a><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Large Number/Big Integer/Big Number converter:]</summary>
+<a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
