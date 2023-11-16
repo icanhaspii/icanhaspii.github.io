@@ -149,7 +149,7 @@ whoami|<br>
   <br>
   <summary>[Linux Analysis Commands - grep]</summary>
 Some common grep options:<br><br>
-<img src="images/image165.png"><br>
+<img src="images/image165.png"><br><br>
 <img src="images/Screenshot 2023-11-15 203316.png"><br><br>
 grep example: cat cowrie.log.wwhf2020_lab2 | grep CMD<br><br>
 <img src="images/image163.jpg"><br><br>
