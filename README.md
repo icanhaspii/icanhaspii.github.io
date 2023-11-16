@@ -337,7 +337,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
   <br>
   <summary>[Reverse Text/Mirror Text/Backward Text/Upsidedown Text]</summary>
 <a href="https://www.flipyourtext.com" target="_blank">https://www.flipyourtext.com</a><br>
-<a href="https://www.upsidedowntext.com" target="_blank">https://www.upsidedowntext.com</a><br>
+<a href="https://www.upsidedowntext.com" target="_blank">https://www.upsidedowntext.com</a><br><br>
 <img src="images/image199.png"><br><br>
 </details>
 
