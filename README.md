@@ -263,7 +263,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 <details markdown>
   <summary>[Stego - Some Resources]</summary>
-<a href="https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography" target="_blank"></a>https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography<br>
+<a href="https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography" target="_blank">https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography</a><br>
 <a href="https://www.kali.org/tools/steghide" target="_blank">https://www.kali.org/tools/steghide</a><br>
 <a href="https://steghide.sourceforge.net" target="_blank">https://steghide.sourceforge.net</a><br>
 <a href="https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux" target="_blank">https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux</a><br>
