@@ -172,7 +172,6 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 <details markdown>
   <br>
   <summary>[Pcap Analysis - strings]</summary>
-Strings<br><br>
 You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
 <img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
 </details>
