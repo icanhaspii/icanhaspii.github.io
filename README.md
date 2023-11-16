@@ -169,6 +169,44 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
+<details markdown>
+  <br>
+  <summary>[Pcap Analysis - strings]</summary>
+Strings<br><br>
+You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Pcap Analysis - TShark]</summary>
+Strings<br><br>
+You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
+<a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file" target="_blank">You can extract ip addresses from a Pcap using Tshark</a><br><br>
+To extract just the destination ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211016.jpg"><br><br>
+To extract both the destination ip and the source ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211435.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Pcap Analysis - Zeek]</summary>
+Strings<br><br>
+You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
+<a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard" target="_blank">John Hubbard has a fantastic install video</a><br><br>
+Zeek installs itself here:<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg"><br><br>
+To export logs from a Pcap into Zeek format, type the following syntax (r is for read):<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006.jpg"><br><br>
+
+
+
+
+
+
 
 
 
