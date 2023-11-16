@@ -201,6 +201,7 @@ Zeek installs itself here:<br><br>
 <img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg"><br><br>
 To export logs from a Pcap into Zeek format, type the following syntax (r is for read):<br><br>
 <img src="images/Zeek_Screenshot 2023-03-24 201006.jpg"><br><br>
+</details>
 
 <details markdown>
   <br>
@@ -215,7 +216,7 @@ Next, type the following syntax (LogsOily was the name of my pcap, so I called t
 <img src="Screenshot 2023-03-24 213517"><br><br>
 RITA will tell you when it’s done:<br><br>
 <img src="images/Screenshot 2023-03-24 213137"><br><br>
-
+</details>
 
 
 
