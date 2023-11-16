@@ -159,6 +159,12 @@ Count w/ grep:<br><br>
 <img src="images/image158.png"><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - curl]</summary>
+The cURL command is a useful Linux tool for data transfer and connection troubleshooting. At the client side, cURL is powered by libcurl, a free URL transfer library.<br><br>
+<img src="images/image157.png"><br><br>
+</details>
 
 
 
