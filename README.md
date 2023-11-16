@@ -320,6 +320,25 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <img src="images/image201.png"><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[File Headers/Magic Bytes/File Types/Carving Files]</summary>
+<a href="https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5" target="_blank">https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5</a><br>
+<a href="https://en.wikipedia.org/wiki/List_of_file_signatures" target="_blank">https://en.wikipedia.org/wiki/List_of_file_signatures</a><br>
+<a href="https://www.garykessler.net/library/file_sigs.html" target="_blank">https://www.garykessler.net/library/file_sigs.html</a><br>
+<a href="https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance" target="_blank">https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance</a><br>
+<a href="https://anilsoni85.blogspot.com/2014/11/basics-of-png-file-format-with-libpng.html" target="_blank">https://anilsoni85.blogspot.com/2014/11/basics-of-png-file-format-with-libpng.html</a><br>
+<a href="https://asecuritysite.com/forensics/png?file=%2Flog%2Fbasn0g01.png" target="_blank">https://asecuritysite.com/forensics/png?file=%2Flog%2Fbasn0g01.png</a><br>
+<a href="https://www.red-gate.com/simple-talk/blogs/anatomy-of-a-net-assembly-pe-headers" target="_blank">https://www.red-gate.com/simple-talk/blogs/anatomy-of-a-net-assembly-pe-headers</a><br>
+<a href="https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s" target="_blank">https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s</a><br><br>
+</details>
+
+
+
+
+
+
+
 
 
 
