@@ -207,9 +207,9 @@ RITA (Real Intelligence Threat Analytics):<br><br>
 To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
 <img src="images/image62.png"><br><br>
 Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name):<br><br>
-<img src="images/image64.png"><br><br>
+<img src="images/image64.jpg"><br><br>
 RITA will tell you when it’s done:<br><br>
-<img src="images/image66.png"><br><br>
+<img src="images/image66.jpg"><br><br>
 </details>
 
 
