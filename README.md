@@ -155,8 +155,8 @@ grep example: cat cowrie.log.wwhf2020_lab2 | grep CMD<br><br>
 <img src="images/image163.jpg"><br><br>
 <img src="images/image155.jpg"><br><br>
 Count w/ grep:<br><br>
-<img src="images/image154.jpg"><br><br>
-<img src="images/image158.jpg"><br><br>
+<img src="images/image154.png"><br><br>
+<img src="images/image158.png"><br><br>
 </details>
 
 
