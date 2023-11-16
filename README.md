@@ -300,7 +300,9 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 └─# chmod +x iSteg-v2.1_GUI.jar<br>
 4. Launched the program in Java:<br>
 └─# java -jar iSteg-v2.1_GUI.jar<br>
+<img src="images/image211.png"><br><br>
 5. Chose the hidden.png file and it opened to the flag, flag{YouFoundMe}:<br>
+<img src="images/image213.png"><br><br>
 </details>
 
 
