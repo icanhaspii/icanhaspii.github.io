@@ -224,7 +224,7 @@ TCPflow is a command-line tool for processing streams.<br>
   <br>
   <summary>[Audio Analysis - Decoders/Analyzers]</summary>
 Note from Dcode regarding T9 vs Multitap Confusion:<br>
-Multitap ABC should not be confused with T9 predictive text. 'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
+Multitap ABC should not be confused with T9 predictive text. For example, 'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
 <a href="https://www.audacityteam.org/download" target="_blank">https://www.audacityteam.org/download</a><br>
 <a href="https://www.sonicvisualiser.org/download.html" target="_blank">https://www.sonicvisualiser.org/download.html</a><br>
 <a href="http://dialabc.com/sound/detect/index.html" target="_blank">http://dialabc.com/sound/detect/index.html</a><br>
@@ -246,7 +246,7 @@ Multitap ABC should not be confused with T9 predictive text. 'DCODE' is written 
 <a href="https://www.aperisolve.com" target="_blank">https://www.aperisolve.com</a><br>
 <a href="https://www.aperisolve.com/cheatsheet" target="_blank">https://www.aperisolve.com/cheatsheet</a><br>
 <a href="https://www.dcode.fr/spectral-analysis" target="_blank">https://www.dcode.fr/spectral-analysis</a><br>
-<a href="https://gqrx.dk" target="_blank"></a>https://gqrx.dk</a><br>
+<a href="https://gqrx.dk" target="_blank">https://gqrx.dk</a><br>
 </details>
 
 
