@@ -212,7 +212,7 @@ You can run strings on a Pcap! Below are a couple examples (I like to pipe my re
 To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
 <img src="images/Screenshot 2023-03-24 213137"><br><br>
 Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name):<br><br>
-<img src="Screenshot 2023-03-24 213517"><br><br>
+<img src="images/Screenshot 2023-03-24 213517"><br><br>
 RITA will tell you when it’s done:<br><br>
 <img src="images/Screenshot 2023-03-24 213137"><br><br>
 </details>
