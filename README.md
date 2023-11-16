@@ -126,6 +126,34 @@ That means that chmod u+x somefile will grant only the owner of that file execut
 <a href="https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x" target="_blank">https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x</a><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - chown]</summary>
+To give a file permissions so that a regular user can move it or edit it, you can run the following:<br><br>
+# chown kali NTUSER.DAT.dat<br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Linux Analysis Commands - Bash]</summary>
+Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.<br><br>
+<a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners" target="_blank">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners</a><br><br>
+Some of the main delimiters (terminators or redirectors) for Bash commands are as follows:<br><br>
+whoami; whoami<br><br>
+whoami|
+> (output to)
+|| (double pipe)
+</details>
+
+
+
+
+
+
+
+
+
+
 
 
 
