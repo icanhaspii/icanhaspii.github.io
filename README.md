@@ -421,11 +421,11 @@ Step 5: Now we can use grep inside of gdb for things like the following:
 PLT stands for Procedure Linkage Table which is, put simply, used to call external procedures/functions whose address isn't known in the time of linking, and is left to be resolved by the dynamic linker at run time.<br><br>
 GOT stands for Global Offsets Table and is similarly used to resolve addresses. Both PLT and GOT and other relocation information is explained in greater length in this article.<br><br>
 Also, Ian Lance Taylor, the author of GOLD has put up an article series on his blog which is totally worth reading (twenty parts!): entry point here "Linkers part 1".<br><br>
-<a href="https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got" target="_blank">https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got</a><br><br>
-<a href="https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html" target="_blank">https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html</a><br><br>
-<a href="https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html" target="_blank">https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html</a><br><br>
+<a href="https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got" target="_blank">https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got</a><br>
+<a href="https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html" target="_blank">https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html</a><br>
+<a href="https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html" target="_blank">https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html</a><br>
 <a href="https://www.airs.com/blog/archives/38" target="_blank">https://www.airs.com/blog/archives/38</a><br><br>
-Possible Alternative Steps:<br>
+Possible Alternative Steps:<br><br>
 Step 2. Type gdb -q - ENTER:<br><br>
 <img src="images/image47.png"><br><br>
 Step 3. Before you can run gef against your executable, you'll need to launch your program inside of gdb first:<br><br>
