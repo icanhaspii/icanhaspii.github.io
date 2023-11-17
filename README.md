@@ -341,6 +341,12 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://www.upsidedowntext.com" target="_blank">https://www.upsidedowntext.com</a><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[PDF Analysis - PDF Editors]</summary>
+<a href=https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
+</details>
+
 
 
 
