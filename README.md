@@ -365,9 +365,14 @@ The dmesg command is a Linux utility that displays kernel-related messages retri
 readelf displays information about one or more ELF format object files. The options control what particular information to display.<br><br>
 elffile... are the object files to be examined. 32-bit and 64-bit ELF files are supported, as are archives containing ELF files.<br><br>
 This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD (Binary File Descriptor) library, so if there is a bug in BFD, then readelf will not be affected.<br><br>
-<a href="https://man7.org/linux/man-pages/man1/readelf.1.html" target="_blank">https://man7.org/linux/man-pages/man1/readelf.1.html </a><br>
+<a href="https://man7.org/linux/man-pages/man1/readelf.1.html" target="_blank">https://man7.org/linux/man-pages/man1/readelf.1.html </a><br><br>
 <img src="images/image33.png"><br><br>
 </details>
+
+
+
+
+
 
 
 
