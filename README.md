@@ -347,6 +347,17 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href=https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[Binary Analysis - dmesg command]</summary>
+Note: Run after you launch an app that you want to find out more about, errors and such.<br><br>
+The dmesg command is a Linux utility that displays kernel-related messages retrieved from the kernel ring buffer. The ring buffer stores information about hardware, device driver initialization, and messages from kernel modules that take place during system startup.<br><br>
+<a href=https://phoenixnap.com/kb/dmesg-linux" target="_blank">https://phoenixnap.com/kb/dmesg-linux</a><br>
+<a href=https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux" target="_blank">https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux</a><br>
+<a href=https://linuxize.com/post/dmesg-command-in-linux" target="_blank">https://linuxize.com/post/dmesg-command-in-linux</a><br><br>
+<img src="images/image68.png"><br><br>
+<img src="images/image70.png"><br><br>
+</details>
 
 
 
