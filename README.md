@@ -378,7 +378,42 @@ This program performs a similar function to objdump but it goes into more detail
 <a href="https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html" target="_blank">https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html</a><br><br>
 </details>
 
+<details markdown>
+  <br>
+  <summary>[Binary Analysis - GEF]</summary>
+Install GEF to enhance GDB.<br><br>
+<a href="https://github.com/hugsy/gef" target="_blank">https://github.com/hugsy/gef</a><br><br>
+<a href="https://hugsy.github.io/gef" target="_blank">https://hugsy.github.io/gef</a><br><br>
+Instant Setup - WHAT WORKED FOR ME IS FROM INSIDE GDB, SCROLL DOWN...:<br><br>
+Simply make sure you have GDB 8.0 or higher compiled with Python3.6+ bindings, then:<br><br>
+# via the install script<br>
+## using curl<br>
+$ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"<br><br>
 
+## using wget<br>
+$ bash -c "$(wget https://gef.blah.cat/sh -O -)"<br><br>
+
+# or manually<br>
+$ wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py<br>
+$ echo source ~/.gdbinit-gef.py >> ~/.gdbinit<br><br>
+
+# or alternatively from inside gdb directly<br>
+$ gdb -q<br>
+(gdb) pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br><br>
+<img src="images/image36.png"><br><br>
+Note: to fetch the latest version of GEF (i.e. from the dev branch), simply replace in the URL to https://gef.blah.cat/dev.  --> This is the one I used, however I modified the script just a bit as the given TinyURL was no longer working, but I believe the documentation is now updated.:<br><br>
+<img src="images/image38.png"><br><br>
+<img src="images/image40.png"><br><br>
+Step 1. Make sure you are root, or at least use sudo.<br>
+Step 2. Type gdb ./vuln (name of executable):<br><br>
+<img src="images/image42.png"><br><br>
+Step 3: Launch gef<br>
+pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br>
+Step 4: Set a break at “Main” and run the program, within gef:<br><br>
+<img src="images/image44.png"><br><br>
+Step 5: Now we can use grep inside of gdb for things like the following:
+<img src="images/image46.png"><br><br>
+</details>
 
 
 
