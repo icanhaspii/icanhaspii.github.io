@@ -501,7 +501,7 @@ print(hex(elf.symbols["win"]))<br>
 “ROPgadget comes installed with PWN Tools, so if you have those installed, you should just be able to run ROPgadget.  This will list out all of the potential locations in the binary, based off their address, that will do different, particular things.” -John Hammond<br><br>
 Type: ROPgadget --binary vuln<br><br>
 <img src="images/image109.png"><br><br>
-<snipped><br><br>
+(snipped)<br><br>
 Unique gadgets found: 32,148<br><br>
 Because there were so many results, we reran ROPgadget and piped the results to a text file for easier searching:<br><br>
 <img src="images/image91.png"><br><br>
