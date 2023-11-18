@@ -863,55 +863,56 @@ Volatility is the world's most widely used framework for extracting digital arti
 Running Volatility in Kali is pretty straight forward.<br><br>
 <img src="images/image81.jpg"><br><br>
 
---> Note - If you are inside the “volatility3” directory, you would alter these:
+--> Note - If you are inside the “volatility3” directory, you would alter these:<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt<br><br>
 
-python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt
+python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt<br>
 
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
 
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt<br>
 
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt<br>
 
-python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt
+python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt<br>
 
-python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt
+python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
 
-python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt
+python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br>
 
-CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt
+CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br>
 
--It needs to be used with, for example, an offset such as the following, and an output folder:
+-It needs to be used with, for example, an offset such as the following, and an output folder:<br>
 
-(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370
+(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
 
-(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58
+(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br>
 
-[--virtaddr VIRTADDR] [--physaddr PHYSADDR]
-optional arguments:
-  -h, --help           show this help message and exit
-  --pid PID            Process ID to include (all other processes are excluded)
-  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address
-  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address
+[--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
+optional arguments:<br>
+  -h, --help           show this help message and exit<br>
+  --pid PID            Process ID to include (all other processes are excluded)<br>
+  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
+  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br>
 </details>
+
 
 
 <details>
@@ -1053,3 +1054,4 @@ optional arguments:
 
 </body>
 </html>
+
