@@ -910,7 +910,7 @@ optional arguments:<br>
   -h, --help           show this help message and exit<br>
   --pid PID            Process ID to include (all other processes are excluded)<br>
   --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
-  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br>
+  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
 </details>
 
 
