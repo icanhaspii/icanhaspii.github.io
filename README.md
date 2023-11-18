@@ -895,15 +895,15 @@ python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/ho
 
 python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
 
-python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br>
+python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br><br>
 
-CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br>
+CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br><br>
 
--It needs to be used with, for example, an offset such as the following, and an output folder:<br>
+-It needs to be used with, for example, an offset such as the following, and an output folder:<br><br>
 
 (a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
 
-(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br>
+(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br><br>
 
 [--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
 optional arguments:<br>
