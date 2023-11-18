@@ -860,7 +860,7 @@ Volatility is the world's most widely used framework for extracting digital arti
 <a href="https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility" target="_blank">https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility</a><br>
 <a href="https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls" target="_blank">https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls</a><br><br>
 
-Running Volatility in Kali is pretty straight forward.<br><br>
+Running Volatility in Kali is pretty straight forward:<br><br>
 <img src="images/image81.jpg"><br><br>
 
 --> Note - If you are inside the “volatility3” directory, you would alter these:<br>
