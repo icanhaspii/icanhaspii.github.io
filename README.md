@@ -915,9 +915,7 @@ optional arguments:
 </details>
 </ul>
 
-</ul>
-  </ul>
-</details>
+
 <details>
 <summary>[Misc.]</summary>
 <ul>
