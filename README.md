@@ -913,7 +913,6 @@ optional arguments:
   --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address
   --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address
 </details>
-</ul>
 
 
 <details>
