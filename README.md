@@ -8,7 +8,7 @@
   <br>
     <summary>[Linux Analysis Commands Julia Evans' CheatSheet]</summary>
 Thank you Julia Evans! See more of her art here:<br><br>
-<img src="images/226.jpg"><br><br>
+<img src="images/image226.jpg"><br><br>
 <a href="https://wizardzines.com" target="_blank">https://wizardzines.com</a><br><br>
 </details>
 
