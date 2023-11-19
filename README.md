@@ -996,10 +996,10 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 <details markdown>
   <br>
-  <summary>[PDF Analysis - PDF Editors]</summary>
+  <summary>[PDF Analysis]</summary>
 <details markdown>
   <br>
-    <summary>[PDF Analysis - PDF Editors - Some Resources]</summary>
+    <summary>[PDF Analysis - PDF Editors]</summary>
 <a href="https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
 </details>
 </details>
