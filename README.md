@@ -173,6 +173,7 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 
 
 
+
 <details markdown>
   <br>
   <summary>[Discovery]</summary>
@@ -475,81 +476,63 @@ Requests/sec.: 0<br><br>
 </details>
 
 
+
+<details markdown>
+  <summary>[Pcap Analysis]</summary>
 <details markdown>
   <br>
-  <summary>[Memory Analysis]</summary>
+    <summary>[Pcap Analysis - strings]</summary>
+Strings<br><br>
+You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
+</details>
+
 <details markdown>
   <br>
-    <summary>[Memory Analysis - Volatility]</summary>
-Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system.<br>
+    <summary>[Pcap Analysis - TShark]</summary>
+<a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file" target="_blank">You can extract ip addresses from a Pcap using Tshark</a><br><br>
+To extract just the destination ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211016.jpg"><br><br>
+To extract both the destination ip and the source ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211435.jpg"><br><br>
+</details>
 
-<a href="https://www.volatilityfoundation.org/releases-vol3" target="_blank">https://www.volatilityfoundation.org/releases-vol3</a><br>
-<a href="https://github.com/volatilityfoundation/volatility3" target="_blank">https://github.com/volatilityfoundation/volatility3</a><br>
-<a href="https://github.com/volatilityfoundation/volatility/wiki/Command-Reference" target="_blank">https://github.com/volatilityfoundation/volatility/wiki/Command-Reference</a><br>
-<a href="https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html" target="_blank">https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html</a><br>
-<a href="https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility" target="_blank">https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility</a><br>
-<a href="https://www.youtube.com/watch?v=GRmTBugm4js&t=43s" target="_blank">https://www.youtube.com/watch?v=GRmTBugm4js&t=43</a><br>
-<a href="https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html" target="_blank">https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html</a><br>
-<a href="https://github.com/volatilityfoundation/volatility3/issues/565" target="_blank">https://github.com/volatilityfoundation/volatility3/issues/565</a><br>
-<a href="https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6" target="_blank">https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6</a><br>
-<a href="https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis" target="_blank">https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis</a><br>
-<a href="https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc" target="_blank">https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc</a><br>
-<a href="https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility" target="_blank">https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility</a><br>
-<a href="https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls" target="_blank">https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls</a><br><br>
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - Zeek]</summary>
+<a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard" target="_blank">John Hubbard has a fantastic install video</a><br><br>
+Zeek installs itself here:<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg"><br><br>
+To export logs from a Pcap into Zeek format, type the following syntax (r is for read):<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006.jpg"><br><br>
+</details>
 
-Running Volatility in Kali is pretty straight forward:<br><br>
-<img src="images/image81.jpg"><br><br>
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - RITA]</summary>
+RITA (Real Intelligence Threat Analytics):<br><br>
+<a href="https://www.activecountermeasures.com/free-tools/rita" target="_blank">RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way</a><br><br>
+<a href="https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures" target="_blank">Chris Brenton has a fantastic install video</a><br><br>
+To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
+<img src="images/image62.jpg"><br><br>
+Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name):<br><br>
+<img src="images/image64.png"><br><br>
+RITA will tell you when it’s done:<br><br>
+<img src="images/image66.jpg"><br><br>
+</details>
 
---> Note - If you are inside the “volatility3” directory, you would alter these:<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt<br><br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt<br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt<br>
-
-python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt<br>
-
-python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
-
-python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br><br>
-
-CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br><br>
-
--It needs to be used with, for example, an offset such as the following, and an output folder:<br><br>
-
-(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
-
-(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br><br>
-
-[--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
-optional arguments:<br>
-  -h, --help           show this help message and exit<br>
-  --pid PID            Process ID to include (all other processes are excluded)<br>
-  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
-  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - TCPflow]</summary>
+TCPflow is a command-line tool for processing streams.<br>
+<a href="https://linux.die.net/man/1/tcpflow" target="_blank">https://linux.die.net/man/1/tcpflow</a><br>
+<a href="https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#" target="_blank">https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#</a><br>
+<a href="https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf" target="_blank">https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf</a><br><br>
+<img src="images/image183.png"><br><br>
+<img src="images/image209.png"><br><br>
 </details>
 </details>
+
 
 
 <details markdown>
@@ -738,61 +721,89 @@ The GNU objcopy utility copies the contents of an object file to another. objcop
 </details>
 
 
-<details markdown>
-  <summary>[Pcap Analysis]</summary>
-<details markdown>
-  <br>
-    <summary>[Pcap Analysis - strings]</summary>
-Strings<br><br>
-You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
-<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
-</details>
 
 <details markdown>
   <br>
-    <summary>[Pcap Analysis - TShark]</summary>
-<a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file" target="_blank">You can extract ip addresses from a Pcap using Tshark</a><br><br>
-To extract just the destination ip, type the following command:<br><br>
-<img src="images/TShark_Screenshot 2023-03-16 211016.jpg"><br><br>
-To extract both the destination ip and the source ip, type the following command:<br><br>
-<img src="images/TShark_Screenshot 2023-03-16 211435.jpg"><br><br>
-</details>
-
+  <summary>[Memory Analysis]</summary>
 <details markdown>
   <br>
-    <summary>[Pcap Analysis - Zeek]</summary>
-<a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard" target="_blank">John Hubbard has a fantastic install video</a><br><br>
-Zeek installs itself here:<br><br>
-<img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg"><br><br>
-To export logs from a Pcap into Zeek format, type the following syntax (r is for read):<br><br>
-<img src="images/Zeek_Screenshot 2023-03-24 201006.jpg"><br><br>
+    <summary>[Memory Analysis - Volatility]</summary>
+Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system.<br>
+
+<a href="https://www.volatilityfoundation.org/releases-vol3" target="_blank">https://www.volatilityfoundation.org/releases-vol3</a><br>
+<a href="https://github.com/volatilityfoundation/volatility3" target="_blank">https://github.com/volatilityfoundation/volatility3</a><br>
+<a href="https://github.com/volatilityfoundation/volatility/wiki/Command-Reference" target="_blank">https://github.com/volatilityfoundation/volatility/wiki/Command-Reference</a><br>
+<a href="https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html" target="_blank">https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html</a><br>
+<a href="https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility" target="_blank">https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility</a><br>
+<a href="https://www.youtube.com/watch?v=GRmTBugm4js&t=43s" target="_blank">https://www.youtube.com/watch?v=GRmTBugm4js&t=43</a><br>
+<a href="https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html" target="_blank">https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html</a><br>
+<a href="https://github.com/volatilityfoundation/volatility3/issues/565" target="_blank">https://github.com/volatilityfoundation/volatility3/issues/565</a><br>
+<a href="https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6" target="_blank">https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6</a><br>
+<a href="https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis" target="_blank">https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis</a><br>
+<a href="https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc" target="_blank">https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc</a><br>
+<a href="https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility" target="_blank">https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility</a><br>
+<a href="https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls" target="_blank">https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls</a><br><br>
+
+Running Volatility in Kali is pretty straight forward:<br><br>
+<img src="images/image81.jpg"><br><br>
+
+--> Note - If you are inside the “volatility3” directory, you would alter these:<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt<br><br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt<br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt<br>
+
+python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt<br>
+
+python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
+
+python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br><br>
+
+CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br><br>
+
+-It needs to be used with, for example, an offset such as the following, and an output folder:<br><br>
+
+(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
+
+(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br><br>
+
+[--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
+optional arguments:<br>
+  -h, --help           show this help message and exit<br>
+  --pid PID            Process ID to include (all other processes are excluded)<br>
+  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
+  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
+</details>
 </details>
 
-<details markdown>
-  <br>
-    <summary>[Pcap Analysis - RITA]</summary>
-RITA (Real Intelligence Threat Analytics):<br><br>
-<a href="https://www.activecountermeasures.com/free-tools/rita" target="_blank">RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way</a><br><br>
-<a href="https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures" target="_blank">Chris Brenton has a fantastic install video</a><br><br>
-To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
-<img src="images/image62.jpg"><br><br>
-Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name):<br><br>
-<img src="images/image64.png"><br><br>
-RITA will tell you when it’s done:<br><br>
-<img src="images/image66.jpg"><br><br>
-</details>
 
-<details markdown>
-  <br>
-    <summary>[Pcap Analysis - TCPflow]</summary>
-TCPflow is a command-line tool for processing streams.<br>
-<a href="https://linux.die.net/man/1/tcpflow" target="_blank">https://linux.die.net/man/1/tcpflow</a><br>
-<a href="https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#" target="_blank">https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#</a><br>
-<a href="https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf" target="_blank">https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf</a><br><br>
-<img src="images/image183.png"><br><br>
-<img src="images/image209.png"><br><br>
-</details>
-</details>
+
+
+
+
+
 
 
 
