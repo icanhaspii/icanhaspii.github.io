@@ -1,22 +1,24 @@
 # icanhaspii-CTF CheatSheet
 ## These are my CTF Hacks!  I hope you enjoy!
 <details markdown>
+  <summary>[Linux Analysis Commands]</summary>
+<details markdown>
   <br>
-  <summary>[Linux Analysis Commands - file]</summary>
+    <summary>[Linux Analysis Commands - file]</summary>
 Run this to determine what type of file you are dealing with:<br><br>
 <img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - binwalk]</summary>
+    <summary>[Linux Analysis Commands - binwalk]</summary>
 Run this to view a summary of the file contents:<br><br>
 <img src="images/BinWalk_Screenshot 2023-10-03 203227.png"><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - strings]</summary>
+    <summary>[Linux Analysis Commands - strings]</summary>
 Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:<br><br>
 <img src="images/Strings_Screenshot 2023-05-12 172558.jpg"><br><br>
 You can also combine strings and grep:<br><br>
@@ -25,21 +27,21 @@ You can also combine strings and grep:<br><br>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - java -jar]</summary>
+    <summary>[Linux Analysis Commands - java -jar]</summary>
 The java -jar command will open a .jar file:<br><br>
 <img src="images\Java_JarStegSolveHowTo.png"><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - java]</summary>
+    <summary>[Linux Analysis Commands - java]</summary>
 The java command will open a .java file:<br><br>
 <img src="images/Java_Screenshot 2022-06-15 085349_Edited.png"><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - base64]</summary>
+    <summary>[Linux Analysis Commands - base64]</summary>
 The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:<br><br>
 1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=<br><br>
 2. Type the following into your Linux command prompt to echo/print to screen:<br><br>
@@ -79,7 +81,7 @@ You can try the following “Recipe” in CyberChef to decode:<br><br>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - ifconfig]</summary>
+    <summary>[Linux Analysis Commands - ifconfig]</summary>
 To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
 <img src="images/ip_Screenshot 2023-11-09 105007.png"><br><br>
 <img src="images/ip_Screenshot 2023-11-09 104951.png"><br><br>
@@ -88,14 +90,14 @@ To find your ip address and network configuration, you can use the old ifconfig 
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - realpath]</summary>
+    <summary>[Linux Analysis Commands - realpath]</summary>
 realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries. Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.<br><br>
 href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a><br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - SSH]</summary>
+    <summary>[Linux Analysis Commands - SSH]</summary>
 To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
 https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf<br><br>
 https://opensource.com/article/20/9/ssh<br><br>
@@ -104,7 +106,7 @@ https://opensource.com/article/20/9/ssh<br><br>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - chmod]</summary>
+    <summary>[Linux Analysis Commands - chmod]</summary>
 chmod +x<br><br>
 Note: chmod +x (plus x) stands for execute.<br><br>
 Question:<br><br>
@@ -128,14 +130,14 @@ That means that chmod u+x somefile will grant only the owner of that file execut
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - chown]</summary>
+    <summary>[Linux Analysis Commands - chown]</summary>
 To give a file permissions so that a regular user can move it or edit it, you can run the following:<br><br>
 # chown kali NTUSER.DAT.dat<br><br>
 </details>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - Bash]</summary>
+    <summary>[Linux Analysis Commands - Bash]</summary>
 Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.<br><br>
 <a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners" target="_blank">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners</a><br><br>
 Some of the main delimiters (terminators or redirectors) for Bash commands are as follows:<br>
@@ -147,7 +149,7 @@ whoami|<br><br>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - grep]</summary>
+    <summary>[Linux Analysis Commands - grep]</summary>
 Some common grep options:<br><br>
 <img src="images/image165.png"><br><br>
 <img src="images/Screenshot 2023-11-15 203316.png"><br><br>
@@ -161,12 +163,49 @@ Count w/ grep:<br><br>
 
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands - curl]</summary>
+    <summary>[Linux Analysis Commands - curl]</summary>
 Curl is useful in transferring data without user interaction.<br><br>
 curl http://nidus-setup:8080<br><br>
 curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/json" --data-binary '{"temperature":1000}'<br><br>
 <img src="images/image157.png"><br><br>
 </details>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <details markdown>
