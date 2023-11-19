@@ -4,12 +4,13 @@
   <br>
   <summary><li><B>[Linux Analysis Commands]</B></li></summary>
 
-
 <details markdown>
   <br>
-    <summary>[Linux Analysis Commands - file]</summary>
+  <ul>
+    <summary><li><B>[Linux Analysis Commands - file]</B></li></summary>
 Run this to determine what type of file you are dealing with:<br><br>
 <img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
+  </ul>
 </details>
 
 <details markdown>
