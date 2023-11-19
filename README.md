@@ -172,6 +172,191 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
+<details markdown>
+  <br>
+  <summary>[Binary Analysis]</summary>
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - dmesg command]</summary>
+Note: Run after you launch an app that you want to find out more about, errors and such.<br><br>
+The dmesg command is a Linux utility that displays kernel-related messages retrieved from the kernel ring buffer. The ring buffer stores information about hardware, device driver initialization, and messages from kernel modules that take place during system startup.<br><br>
+<a href="https://phoenixnap.com/kb/dmesg-linux" target="_blank">https://phoenixnap.com/kb/dmesg-linux</a><br>
+<a href="https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux" target="_blank">https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux</a><br>
+<a href="https://linuxize.com/post/dmesg-command-in-linux" target="_blank">https://linuxize.com/post/dmesg-command-in-linux</a><br><br>
+<img src="images/image68.png"><br><br>
+<img src="images/image70.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - readelf command]</summary>
+readelf displays information about one or more ELF format object files. The options control what particular information to display.<br><br>
+elffile... are the object files to be examined. 32-bit and 64-bit ELF files are supported, as are archives containing ELF files.<br><br>
+This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD (Binary File Descriptor) library, so if there is a bug in BFD, then readelf will not be affected.<br><br>
+<a href="https://man7.org/linux/man-pages/man1/readelf.1.html" target="_blank">https://man7.org/linux/man-pages/man1/readelf.1.html</a><br><br>
+<img src="images/image33.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - GDB]</summary>
+readelf displays information about one or more ELF format object files. The options control what particular information to display.<br><br>
+elffile... are the object files to be examined. 32-bit and 64-bit ELF files are supported, as are archives containing ELF files.<br><br>
+This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD (Binary File Descriptor) library, so if there is a bug in BFD, then readelf will not be affected.<br><br>
+<a href="https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html" target="_blank">https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html</a><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - GEF]</summary>
+Install GEF to enhance GDB.<br><br>
+<a href="https://github.com/hugsy/gef" target="_blank">https://github.com/hugsy/gef</a><br>
+<a href="https://hugsy.github.io/gef" target="_blank">https://hugsy.github.io/gef</a><br><br>
+Instant Setup - WHAT WORKED FOR ME IS FROM INSIDE GDB, SCROLL DOWN...:<br><br>
+Simply make sure you have GDB 8.0 or higher compiled with Python3.6+ bindings, then:<br><br>
+# via the install script<br>
+## using curl<br>
+$ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"<br><br>
+
+## using wget<br>
+$ bash -c "$(wget https://gef.blah.cat/sh -O -)"<br><br>
+
+# or manually<br>
+$ wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py<br>
+$ echo source ~/.gdbinit-gef.py >> ~/.gdbinit<br><br>
+
+# or alternatively from inside gdb directly<br>
+$ gdb -q<br>
+(gdb) pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br><br>
+<img src="images/image36.png"><br><br>
+Note: to fetch the latest version of GEF (i.e. from the dev branch), simply replace in the URL to https://gef.blah.cat/dev.  --> This is the one I used, however I modified the script just a bit as the given TinyURL was no longer working, but I believe the documentation is now updated.:<br><br>
+<img src="images/image38.png"><br><br>
+<img src="images/image40.png"><br><br>
+Step 1. Make sure you are root, or at least use sudo.<br><br>
+Step 2. Type gdb ./vuln (name of executable):<br><br>
+<img src="images/image42.png"><br><br>
+Step 3: Launch gef<br>
+pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br><br>
+Step 4: Set a break at “Main” and run the program, within gef:<br><br>
+<img src="images/image44.png"><br><br>
+Step 5: Now we can use grep inside of gdb for things like the following:<br><br>
+<img src="images/image46.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - PLT vs. GOT]</summary>
+PLT stands for Procedure Linkage Table which is, put simply, used to call external procedures/functions whose address isn't known in the time of linking, and is left to be resolved by the dynamic linker at run time.<br><br>
+GOT stands for Global Offsets Table and is similarly used to resolve addresses. Both PLT and GOT and other relocation information is explained in greater length in this article.<br><br>
+Also, Ian Lance Taylor, the author of GOLD has put up an article series on his blog which is totally worth reading (twenty parts!): entry point here "Linkers part 1".<br><br>
+<a href="https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got" target="_blank">https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got</a><br>
+<a href="https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html" target="_blank">https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html</a><br>
+<a href="https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html" target="_blank">https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html</a><br>
+<a href="https://www.airs.com/blog/archives/38" target="_blank">https://www.airs.com/blog/archives/38</a><br><br>
+Possible Alternative Steps:<br><br>
+Step 2. Type gdb -q - ENTER:<br><br>
+<img src="images/image47.png"><br><br>
+Step 3. Before you can run gef against your executable, you'll need to launch your program inside of gdb first:<br><br>
+<img src="images/image49.png"><br><br>
+<img src="images/image93.png"><br><br>
+Step4: From within GDB, I typed the following:<br><br>
+<img src="images/image95.png"><br><br>
+<img src="images/image97.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - msf pattern create]</summary>
+The msf-pattern_create command (Buffer Overflow/Segmentation Fault)<br>
+Generates a unique pattern of characters so that if you want to refer back to where the segmentation fault happened, you can search that due to the text having unique characters.<br><br>
+<img src="images/image99.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Binary Analysis - gef pattern create]</summary>
+The gef-pattern_create command (Buffer Overflow/Segmentation Fault)<br>
+Generates a unique pattern of characters so that if you want to refer back to where the segmentation fault happened, you can search that due to the text having unique characters.<br><br>
+<a href="https://gef-legacy.readthedocs.io/en/latest/commands/pattern" target="_blank">https://gef-legacy.readthedocs.io/en/latest/commands/pattern</a><br>
+<a href="https://hugsy.github.io/gef/commands/pattern/#pattern-create" target="_blank">https://hugsy.github.io/gef/commands/pattern/#pattern-create</a><br><br>
+<img src="images/image101.png"><br><br>
+<img src="images/image103.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - checksec]</summary>
+The checksec Command Helps Identify Security Properties and Vulnerabilities.<br><br>
+Must be root, then type: checksec --file=vuln (in this example, vuln is the name of the file we wish to check):<br>
+└─# checksec --file=vuln<br><br>
+Example1:<br>
+<img src="images/image105.png"><br><br>
+<img src="images/image107.png"><br><br>
+<a href="https://opensource.com/article/21/6/linux-checksec" target="_blank">https://opensource.com/article/21/6/linux-checksec</a><br>
+<a href="https://www.systutorials.com/docs/linux/man/7-checksec" target="_blank">https://www.systutorials.com/docs/linux/man/7-checksec</a><br><br>
+<a href="https://github.com/slimm609/checksec.sh/blob/main/docs/index.md" target="_blank">https://github.com/slimm609/checksec.sh/blob/main/docs/index.md</a><br><br>
+<a href="https://docs.pwntools.com/en/stable/commandline.html#pwn-checksec" target="_blank">https://docs.pwntools.com/en/stable/commandline.html#pwn-checksec</a><br><br>
+pwntools has a similar function:<br>
+<a href="https://docs.pwntools.com" target="_blank">https://docs.pwntools.com</a><br><br>
+#!/usr/bin/env python3<br>
+import argparse<br>
+import pwn<br>
+elf = pwn.ELF("./vuln")<br>
+print(hex(elf.symbols["win"]))<br>
+<img src="images/image108.png"><br><br>
+------<br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - ROPgadget]</summary>
+“ROPgadget comes installed with PWN Tools, so if you have those installed, you should just be able to run ROPgadget.  This will list out all of the potential locations in the binary, based off their address, that will do different, particular things.” -John Hammond<br><br>
+Type: ROPgadget --binary vuln<br><br>
+<img src="images/image109.png"><br><br>
+(snipped)<br><br>
+Unique gadgets found: 32,148<br><br>
+Because there were so many results, we reran ROPgadget and piped the results to a text file for easier searching:<br><br>
+<img src="images/image91.png"><br><br>
+<a href="https://github.com/JonathanSalwan/ROPgadget" target="_blank">https://github.com/JonathanSalwan/ROPgadget</a><br>
+<a href="http://shell-storm.org/project/ROPgadget" target="_blank">http://shell-storm.org/project/ROPgadget</a><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - STrace]</summary>
+The strace command displays the system calls when a command is executed. You specify the command and its arguments following strace. The system calls and their arguments and returned values are displayed on standard error output.<br><br>
+Note: By default, STrace will only spit out 32 characters, but if your output is getting cut off, you can extend that by customizing how many characters you want to push out, see examples below:<br><br>
+The following was the output of a partial CTF flag with default STrace settings:<br><br>
+<img src="images/image75.jpg"><br><br>
+The following was the output of the full CTF flag once I customized my STrace output settings:<br><br>
+<img src="images/image77.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - LTrace]</summary>
+Just as strace displays system calls, ltrace displays the functions, arguments, and results of the executed command in the standard error output. ltrace does not reveal from which libraries functions are called.<br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - ObjDump]</summary>
+ObjDump is a command-line program for displaying various information about object files on Unix-like operating systems. For instance, it can be used as a disassembler to view an executable in assembly form.<br><br>
+<a href="https://en.wikipedia.org/wiki/Objdump" target="_blank">https://en.wikipedia.org/wiki/Objdump</a><br>
+<a href="https://www.matteomalvica.com/minutes/binary_analysis" target="_blank">https://www.matteomalvica.com/minutes/binary_analysis</a><br><br>
+<img src="images/image79.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Binary Analysis - ObjCopy]</summary>
+The GNU objcopy utility copies the contents of an object file to another. objcopy uses the GNU BFD Library to read and write the object files. It can write the destination object file in a format different from that of the source object file.<br><br>
+<a href="https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.html" target="_blank">https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.html</a><br>
+<a href="https://sourceware.org/binutils/docs/https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.htmlbinutils/objcopy.html" target="_blank">https://sourceware.org/binutils/docs/https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.htmlbinutils/objcopy.html</a><br><br>
+<a href="https://en.wikipedia.org/wiki/GNU_Binutils" target="_blank">https://en.wikipedia.org/wiki/GNU_Binutils</a><br><br>
+</details>
+</details>
+
 
 <details markdown>
   <summary>[Pcap Analysis]</summary>
