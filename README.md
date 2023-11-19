@@ -2,6 +2,10 @@
 ## These are my CTF Hacks!  I hope you enjoy!
 <details markdown>
   <br>
+  <summary><li><B>[Linux Analysis Commands]</B></li></summary>
+
+<details markdown>
+  <br>
   <ul>
     <summary><li><B>[Linux Analysis Commands - file]</B></li></summary>
 Run this to determine what type of file you are dealing with:<br><br>
