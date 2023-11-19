@@ -172,6 +172,386 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
+
+<details markdown>
+  <br>
+  <summary>[Discovery]</summary>
+<details markdown>
+  <br>
+    <summary>[Discovery - Nmap]</summary>
+CompariTech Nmap CheatSheet:<br><br>
+<img src="images/image134.jpg"><br><br>
+Here's a quick initial scan which pipes the output to a file called “scan.initial”:<br>
+Sudo nmap -sV -sC -oN scan.initial 10.10.147.28<br><br>
+<img src="images/image135.jpg"><br><br>
+Here's another initial scan example which pipes the output to a file called “scan.initial” - this one took quite a bit longer to finish.<br>
+Sudo nmap -A -oN scan.initial 10.10.20.194<br><br>
+<img src="images/image136.jpg"><br><br>
+Here’s an example that we can run on a port that we know is open, so here we know port 80 is open, and we can pipe those results to a file called scan.initial:<br>
+nmap -A -p 80 10.10.129.65 -oN scan.initial<br><br>
+<img src="images/image120.jpg"><br><br>
+Here's one more example, which pipes the output to a file called “scan.initial”. I've heard this called "a classic IppSec scan" since he often begins his streams with this scan:<br>
+nmap -sV -sC -oN scan.initial 10.10.73.1<br><br>
+<img src="images/image121.jpg"><br><br>
+And one more for all of us IppSec fans out there, this is also a common IppSec scan:<br><br>
+nmap -sC -sV -oA nmapScan1 10.10.10.5<br><br>
+The sC is for safe scripts or the most common scripts, sV is for "Enumerate Versions", and oA is for "Output All Formats", and then we call the file “NmapScan1”.<br>
+<a href="https://nmap.org/book/nse-usage.html" target="_blank">https://nmap.org/book/nse-usage.html</a><br>
+<a href="https://www.youtube.com/watch?v=2LNyAbroZUk&ab_channel=IppSec" target="_blank">https://www.youtube.com/watch?v=2LNyAbroZUk&ab_channel=IppSec</a><br><br>
+<img src="images/image123.png"><br><br>
+sudo nmap -F -sV 10.10.11.143<br>
+sudo nmap -v -sC -sV -oA nm nmap/PlayerTwo 10.10.11.143<br>
+Sudo nmap -sS -A -sC -sV -p- -T 410.10.11.143<br>
+-sC for default enumeration scripts<br>
+-sV for enumerating versions<br>
+-F for a Fast Scan<br><br>
+<img src="images/image125.png"><br><br>
+Nmap Port Scan:<br><br>
+-p0- asks Nmap to scan every possible TCP port, -v asks Nmap to be verbose about it, -A enables aggressive tests such as remote OS detection, service/version detection, and the Nmap Scripting Engine (NSE). Finally, -T4 enables a more aggressive timing policy to speed up the scan.<br>
+Example: nmap -p0- -v -A -T4 scanme.nmap.org<br>
+<a href="https://nmap.org/book/port-scanning-tutorial.html" target="_blank">https://nmap.org/book/port-scanning-tutorial.html</a><br>
+Nmap w/ Service enumeration on all ports:<br>
+nmap -p- -sV target_ip<br><br>
+<img src="images/image127.png"><br><br>
+Nmap Version Detection Scan:<br>
+-sV (Version detection).  Alternatively, you can use -A, which enables version detection among other things.<br>
+<a href="https://nmap.org/book/man-version-detection.html" target="_blank">https://nmap.org/book/man-version-detection.html</a><br><br>
+<img src="images/image128.jpg"><br><br>
+Nmap Full Scan on all ports w/ -oA FullScan which pipes our output to a file called “FullScan”:<br><br>
+<img src="images/image130.jpg"><br><br>
+└─# nmap -sVC -T4 -Pn -p- 10.129.136.188 -oA FullScan<br><br>
+Nmap Syn Scan:<br><br>
+nmap -sS<br><br>
+<img src="images/image113.png"><br><br>
+Nmap Ping Scan:<br><br>
+nmap -sn 10.10.89.196<br><br>
+<img src="images/image115.png"><br><br>
+Nmap Version Enumeration Scan:<br><br>
+nmap -sV 10.10.89.196<br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - MasScan]</summary>
+<a href="https://github.com/robertdavidgraham/masscan" target="_blank">https://github.com/robertdavidgraham/masscan</a><br><br>
+MasScan is incredibly powerful and quick but it can break things, for example be careful scanning ICS.<br>
+masscan -p1-65535 10.10.129.65 --rate=1000 -e tun0<br><br>
+<img src="images/image118.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - SMBmap]</summary>
+smbmap -u ubuntu -p S@nta2022 -d workgroup -H 10.10.112.67<br><br>
+<img src="images/image175.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - GoBuster]</summary>
+GoBuster is a tool to catalogue directories. GoBuster can take significantly longer to complete than some of the other Dir searching tools, but that might not necessarily be a bad thing:<br><br>
+gobuster dir -u 10.10.11.143 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
+<img src="images/image153.png"><br><br>
+└─# gobuster dir -u 10.10.11.143 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
+
+===============================================================<br><br>
+
+Gobuster v3.1.0<br><br>
+
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)<br><br>
+
+===============================================================<br><br>
+
+[+] Url:                     http://10.10.11.143<br><br>
+
+[+] Method:                  GET<br><br>
+
+[+] Threads:                 10<br><br>
+
+[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
+
+[+] Negative Status codes:   404<br><br>
+
+[+] User Agent:              gobuster/3.1.0<br><br>
+
+[+] Timeout:                 10s<br><br>
+
+===============================================================<br><br>
+
+2022/05/13 16:44:32 Starting gobuster in directory enumeration mode<br><br>
+
+===============================================================<br><br>
+
+/manual               (Status: 301) [Size: 235] [--> http://10.10.11.143/manual/]<br><br>
+
+===============================================================<br><br>
+
+2022/05/13 16:53:14 Finished<br><br>
+
+===============================================================<br><br>
+
+Another GoBuster Example Below:<br><br>
+
+<img src="images/image185.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - DirSearch]</summary>
+DirSearch is a robust web content discovery tool:<br><br>
+dirsearch -u http://SiteYouWantToSearch -e php<br><br>
+<img src="images/image184.png_Edited"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - FeroxBuster]</summary>
+A simple, fast, recursive content discovery tool written in Rust.  Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.  feroxbuster uses brute force combined with a wordlist to search for unlinked content in target directories. These resources may store sensitive information about web applications and operational systems, such as source code, credentials, internal network addressing, etc.  This attack is also known as Predictable Resource Location, File Enumeration, Directory Enumeration, and Resource Enumeration.<br><br>
+<a href="https://github.com/epi052/feroxbuster" target="_blank">https://github.com/epi052/feroxbuster</a><br><br>
+<a href="https://epi052.github.io/feroxbuster-docs/docs" target="_blank">https://epi052.github.io/feroxbuster-docs/docs</a><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - Sublist3r]</summary>
+Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT.<br>
+<a href="https://www.kali.org/tools/sublist3r" target="_blank">https://www.kali.org/tools/sublist3r</a><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Discovery - Ffuf]</summary>
+A fast web fuzzer for directory discovery, virtual host discovery, and GET/POST parameter fuzzing.
+<a href="https://github.com/ffuf/ffuf" target="_blank">https://github.com/ffuf/ffuf</a><br>
+<a href="https://www.tsustyle.com/cheatsheets/ffuf-cheatsheet" target="_blank">https://www.tsustyle.com/cheatsheets/ffuf-cheatsheet</a><br>
+<a href="https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html" target="_blank">https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html</a><br>
+<a href="https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo" target="_blank">https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo</a><br>
+<a href="https://www.youtube.com/watch?v=aN3Nayvd7FU&ab_channel=InsiderPhD" target="_blank">https://www.youtube.com/watch?v=aN3Nayvd7FU&ab_channel=InsiderPhD</a><br><br>
+
+Ffuf Example:<br><br>
+
+└─# ffuf -u http://10.10.147.28/FUZZ -w /usr/share/wordlists/dirb/common.txt<br>
+
+        /'___\  /'___\           /'___\        
+       /\ \__/ /\ \__/  __  __  /\ \__/        
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\       
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/       
+         \ \_\   \ \_\  \ \____/  \ \_\        
+          \/_/    \/_/   \/___/    \/_/
+</details>
+
+<details markdown>
+  <br>
+  <summary>[Discovery - Wfuzz]</summary>
+Wfuzz is a WebApp framework for finding directories, scripts, etc. 
+<a href="https://github.com/xmendez/wfuzz" target="_blank">https://github.com/xmendez/wfuzz</a><br>
+<a href="https://wfuzz.readthedocs.io/en/latest" target="_blank">https://wfuzz.readthedocs.io/en/latest</a><br>
+<a href="https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo" target="_blank">https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo</a><br><br>
+
+└─$ wfuzz -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -u http://host1.metaproblems.com:5730/FUZZ<br><br>
+
+/usr/lib/python3/dist-packages/wfuzz/__init__.py:34: UserWarning:Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.<br><br>
+
+********************************************************<br><br>
+
+* Wfuzz 3.1.0 - The Web Fuzzer                         *<br><br>
+
+********************************************************<br><br>
+
+Target: http://host1.metaproblems.com:5730/FUZZ<br><br>
+
+Total requests: 48<br><br>
+
+=====================================================================<br><br>
+
+ID           Response   Lines    Word       Chars       Payload<br><br>                 
+
+=====================================================================<br><br>
+
+000000001:   404        9 L      31 W       286 Ch      "ServiceDefinition"<br><br>  
+
+000000024:   404        9 L      31 W       286 Ch      "oracle"<br><br>      
+
+000000015:   404        9 L      31 W       286 Ch      "jboss-net"<br><br>       
+
+000000020:   404        9 L      31 W       286 Ch      "name"<br><br>        
+
+000000021:   404        9 L      31 W       286 Ch      "names"<br><br>          
+
+000000022:   404        9 L      31 W       286 Ch      "operation"<br><br>
+
+000000023:   404        9 L      31 W       286 Ch      "operations"<br><br> 
+
+000000003:   404        9 L      31 W       286 Ch      "atom"<br><br>       
+
+000000007:   404        9 L      31 W       286 Ch      "disco"<br><br>
+
+000000025:   404        9 L      31 W       286 Ch      "proxy"<br><br>      
+
+000000019:   404        9 L      31 W       286 Ch      "methods"<br><br>       
+
+000000018:   404        9 L      31 W       286 Ch      "manual"<br><br>     
+
+000000016:   404        9 L      31 W       286 Ch      "jbossws"<br><br>          
+
+000000009:   404        9 L      31 W       286 Ch      "index"<br><br>                
+
+000000006:   404        9 L      31 W       286 Ch      "default"<br><br>                
+
+000000017:   404        9 L      31 W       286 Ch      "juddi"<br><br>                 
+
+000000010:   404        9 L      31 W       286 Ch      "inquire"<br><br>               
+
+000000012:   404        9 L      31 W       286 Ch      "inspection"<br><br>              
+
+000000014:   404        9 L      31 W       286 Ch      "interfaces"<br><br>              
+
+000000013:   404        9 L      31 W       286 Ch      "interface"<br><br>              
+
+000000011:   404        9 L      31 W       286 Ch      "inquiryapi"<br><br>             
+
+000000008:   404        9 L      31 W       286 Ch      "extwsdl"<br><br>               
+
+000000026:   404        9 L      31 W       286 Ch      "publish"<br><br>              
+
+000000045:   404        9 L      31 W       286 Ch      "wsdl"<br><br>                    
+
+000000004:   404        9 L      31 W       286 Ch      "axis"<br><br>                    
+
+000000002:   404        9 L      31 W       286 Ch      "admin"<br><br>                   
+
+000000044:   404        9 L      31 W       286 Ch      "wsatom"<br><br>                  
+
+000000046:   404        9 L      31 W       286 Ch      "wsgw"<br><br>                   
+
+000000040:   404        9 L      31 W       286 Ch      "webserviceclient+ssl"<br><br>   
+
+000000032:   404        9 L      31 W       286 Ch      "svce"<br><br>                    
+
+000000005:   404        9 L      31 W       286 Ch      "context"<br><br>                 
+
+000000028:   404        9 L      31 W       286 Ch      "query"<br><br>                   
+
+000000042:   404        9 L      31 W       286 Ch      "ws"<br><br>                      
+
+000000039:   404        9 L      31 W       286 Ch      "webserviceclient"<br><br>       
+
+000000043:   404        9 L      31 W       286 Ch      "ws4ee"<br><br>                  
+
+000000034:   404        9 L      31 W       286 Ch      "uddiexplorer"<br><br>            
+
+000000030:   404        9 L      31 W       286 Ch      "service"<br><br>                
+
+000000027:   404        9 L      31 W       286 Ch      "publishing"<br><br>              
+
+000000036:   404        9 L      31 W       286 Ch      "uddilistener"<br><br>            
+
+000000033:   404        9 L      31 W       286 Ch      "uddi"<br><br>                    
+
+000000041:   404        9 L      31 W       286 Ch      "webservices"<br><br>             
+
+000000035:   404        9 L      31 W       286 Ch      "uddigui"<br><br>                
+
+000000038:   404        9 L      31 W       286 Ch      "webservice"<br><br>              
+
+000000037:   404        9 L      31 W       286 Ch      "uddisoap"<br><br>                
+
+000000031:   404        9 L      31 W       286 Ch      "services"<br><br>                
+
+000000029:   404        9 L      31 W       286 Ch      "rss"<br><br>                     
+
+000000048:   404        9 L      31 W       286 Ch      "xmethods"<br><br>                
+
+000000047:   404        9 L      31 W       286 Ch      "wsil"<br><br>                    
+
+Total time: 0<br><br>
+
+Processed Requests: 48<br><br>
+
+Filtered Requests: 0<br><br>
+
+Requests/sec.: 0<br><br>
+</details>
+</details>
+
+
+<details markdown>
+  <br>
+  <summary>[Memory Analysis]</summary>
+<details markdown>
+  <br>
+    <summary>[Memory Analysis - Volatility]</summary>
+Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system.<br>
+
+<a href="https://www.volatilityfoundation.org/releases-vol3" target="_blank">https://www.volatilityfoundation.org/releases-vol3</a><br>
+<a href="https://github.com/volatilityfoundation/volatility3" target="_blank">https://github.com/volatilityfoundation/volatility3</a><br>
+<a href="https://github.com/volatilityfoundation/volatility/wiki/Command-Reference" target="_blank">https://github.com/volatilityfoundation/volatility/wiki/Command-Reference</a><br>
+<a href="https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html" target="_blank">https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html</a><br>
+<a href="https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility" target="_blank">https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility</a><br>
+<a href="https://www.youtube.com/watch?v=GRmTBugm4js&t=43s" target="_blank">https://www.youtube.com/watch?v=GRmTBugm4js&t=43</a><br>
+<a href="https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html" target="_blank">https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html</a><br>
+<a href="https://github.com/volatilityfoundation/volatility3/issues/565" target="_blank">https://github.com/volatilityfoundation/volatility3/issues/565</a><br>
+<a href="https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6" target="_blank">https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6</a><br>
+<a href="https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis" target="_blank">https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis</a><br>
+<a href="https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc" target="_blank">https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc</a><br>
+<a href="https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility" target="_blank">https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility</a><br>
+<a href="https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls" target="_blank">https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls</a><br><br>
+
+Running Volatility in Kali is pretty straight forward:<br><br>
+<img src="images/image81.jpg"><br><br>
+
+--> Note - If you are inside the “volatility3” directory, you would alter these:<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt<br><br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt<br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
+
+python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt<br>
+
+python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt<br>
+
+python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt<br>
+
+python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
+
+python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br><br>
+
+CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br><br>
+
+-It needs to be used with, for example, an offset such as the following, and an output folder:<br><br>
+
+(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
+
+(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br><br>
+
+[--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
+optional arguments:<br>
+  -h, --help           show this help message and exit<br>
+  --pid PID            Process ID to include (all other processes are excluded)<br>
+  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
+  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
+</details>
+</details>
+
+
 <details markdown>
   <br>
   <summary>[Binary Analysis]</summary>
@@ -603,557 +983,6 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
   <summary>[PDF Analysis - PDF Editors]</summary>
 <a href="https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
 </details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - dmesg command]</summary>
-Note: Run after you launch an app that you want to find out more about, errors and such.<br><br>
-The dmesg command is a Linux utility that displays kernel-related messages retrieved from the kernel ring buffer. The ring buffer stores information about hardware, device driver initialization, and messages from kernel modules that take place during system startup.<br><br>
-<a href="https://phoenixnap.com/kb/dmesg-linux" target="_blank">https://phoenixnap.com/kb/dmesg-linux</a><br>
-<a href="https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux" target="_blank">https://www.geeksforgeeks.org/how-to-use-the-dmesg-command-on-linux</a><br>
-<a href="https://linuxize.com/post/dmesg-command-in-linux" target="_blank">https://linuxize.com/post/dmesg-command-in-linux</a><br><br>
-<img src="images/image68.png"><br><br>
-<img src="images/image70.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - readelf command]</summary>
-readelf displays information about one or more ELF format object files. The options control what particular information to display.<br><br>
-elffile... are the object files to be examined. 32-bit and 64-bit ELF files are supported, as are archives containing ELF files.<br><br>
-This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD (Binary File Descriptor) library, so if there is a bug in BFD, then readelf will not be affected.<br><br>
-<a href="https://man7.org/linux/man-pages/man1/readelf.1.html" target="_blank">https://man7.org/linux/man-pages/man1/readelf.1.html</a><br><br>
-<img src="images/image33.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - GDB]</summary>
-readelf displays information about one or more ELF format object files. The options control what particular information to display.<br><br>
-elffile... are the object files to be examined. 32-bit and 64-bit ELF files are supported, as are archives containing ELF files.<br><br>
-This program performs a similar function to objdump but it goes into more detail and it exists independently of the BFD (Binary File Descriptor) library, so if there is a bug in BFD, then readelf will not be affected.<br><br>
-<a href="https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html" target="_blank">https://web.stanford.edu/class/archive/cs/cs107/cs107.1186/guide/gdb.html</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - GEF]</summary>
-Install GEF to enhance GDB.<br><br>
-<a href="https://github.com/hugsy/gef" target="_blank">https://github.com/hugsy/gef</a><br>
-<a href="https://hugsy.github.io/gef" target="_blank">https://hugsy.github.io/gef</a><br><br>
-Instant Setup - WHAT WORKED FOR ME IS FROM INSIDE GDB, SCROLL DOWN...:<br><br>
-Simply make sure you have GDB 8.0 or higher compiled with Python3.6+ bindings, then:<br><br>
-# via the install script<br>
-## using curl<br>
-$ bash -c "$(curl -fsSL https://gef.blah.cat/sh)"<br><br>
-
-## using wget<br>
-$ bash -c "$(wget https://gef.blah.cat/sh -O -)"<br><br>
-
-# or manually<br>
-$ wget -O ~/.gdbinit-gef.py -q https://gef.blah.cat/py<br>
-$ echo source ~/.gdbinit-gef.py >> ~/.gdbinit<br><br>
-
-# or alternatively from inside gdb directly<br>
-$ gdb -q<br>
-(gdb) pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br><br>
-<img src="images/image36.png"><br><br>
-Note: to fetch the latest version of GEF (i.e. from the dev branch), simply replace in the URL to https://gef.blah.cat/dev.  --> This is the one I used, however I modified the script just a bit as the given TinyURL was no longer working, but I believe the documentation is now updated.:<br><br>
-<img src="images/image38.png"><br><br>
-<img src="images/image40.png"><br><br>
-Step 1. Make sure you are root, or at least use sudo.<br><br>
-Step 2. Type gdb ./vuln (name of executable):<br><br>
-<img src="images/image42.png"><br><br>
-Step 3: Launch gef<br>
-pi import urllib.request as u, tempfile as t; g=t.NamedTemporaryFile(suffix='-gef.py'); open(g.name, 'wb+').write(u.urlopen('https://tinyurl.com/gef-main').read()); gdb.execute('source %s' % g.name)<br><br>
-Step 4: Set a break at “Main” and run the program, within gef:<br><br>
-<img src="images/image44.png"><br><br>
-Step 5: Now we can use grep inside of gdb for things like the following:<br><br>
-<img src="images/image46.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - PLT vs. GOT]</summary>
-PLT stands for Procedure Linkage Table which is, put simply, used to call external procedures/functions whose address isn't known in the time of linking, and is left to be resolved by the dynamic linker at run time.<br><br>
-GOT stands for Global Offsets Table and is similarly used to resolve addresses. Both PLT and GOT and other relocation information is explained in greater length in this article.<br><br>
-Also, Ian Lance Taylor, the author of GOLD has put up an article series on his blog which is totally worth reading (twenty parts!): entry point here "Linkers part 1".<br><br>
-<a href="https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got" target="_blank">https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got</a><br>
-<a href="https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html" target="_blank">https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html</a><br>
-<a href="https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html" target="_blank">https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html</a><br>
-<a href="https://www.airs.com/blog/archives/38" target="_blank">https://www.airs.com/blog/archives/38</a><br><br>
-Possible Alternative Steps:<br><br>
-Step 2. Type gdb -q - ENTER:<br><br>
-<img src="images/image47.png"><br><br>
-Step 3. Before you can run gef against your executable, you'll need to launch your program inside of gdb first:<br><br>
-<img src="images/image49.png"><br><br>
-<img src="images/image93.png"><br><br>
-Step4: From within GDB, I typed the following:<br><br>
-<img src="images/image95.png"><br><br>
-<img src="images/image97.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - msf pattern create]</summary>
-The msf-pattern_create command (Buffer Overflow/Segmentation Fault)<br>
-Generates a unique pattern of characters so that if you want to refer back to where the segmentation fault happened, you can search that due to the text having unique characters.<br><br>
-<img src="images/image99.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - gef pattern create]</summary>
-The gef-pattern_create command (Buffer Overflow/Segmentation Fault)<br>
-Generates a unique pattern of characters so that if you want to refer back to where the segmentation fault happened, you can search that due to the text having unique characters.<br><br>
-<a href="https://gef-legacy.readthedocs.io/en/latest/commands/pattern" target="_blank">https://gef-legacy.readthedocs.io/en/latest/commands/pattern</a><br>
-<a href="https://hugsy.github.io/gef/commands/pattern/#pattern-create" target="_blank">https://hugsy.github.io/gef/commands/pattern/#pattern-create</a><br><br>
-<img src="images/image101.png"><br><br>
-<img src="images/image103.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - checksec]</summary>
-The checksec Command Helps Identify Security Properties and Vulnerabilities.<br><br>
-Must be root, then type: checksec --file=vuln (in this example, vuln is the name of the file we wish to check):<br>
-└─# checksec --file=vuln<br><br>
-Example1:<br>
-<img src="images/image105.png"><br><br>
-<img src="images/image107.png"><br><br>
-<a href="https://opensource.com/article/21/6/linux-checksec" target="_blank">https://opensource.com/article/21/6/linux-checksec</a><br>
-<a href="https://www.systutorials.com/docs/linux/man/7-checksec" target="_blank">https://www.systutorials.com/docs/linux/man/7-checksec</a><br><br>
-<a href="https://github.com/slimm609/checksec.sh/blob/main/docs/index.md" target="_blank">https://github.com/slimm609/checksec.sh/blob/main/docs/index.md</a><br><br>
-<a href="https://docs.pwntools.com/en/stable/commandline.html#pwn-checksec" target="_blank">https://docs.pwntools.com/en/stable/commandline.html#pwn-checksec</a><br><br>
-pwntools has a similar function:<br>
-<a href="https://docs.pwntools.com" target="_blank">https://docs.pwntools.com</a><br><br>
-#!/usr/bin/env python3<br>
-import argparse<br>
-import pwn<br>
-elf = pwn.ELF("./vuln")<br>
-print(hex(elf.symbols["win"]))<br>
-<img src="images/image108.png"><br><br>
-------<br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - ROPgadget]</summary>
-“ROPgadget comes installed with PWN Tools, so if you have those installed, you should just be able to run ROPgadget.  This will list out all of the potential locations in the binary, based off their address, that will do different, particular things.” -John Hammond<br><br>
-Type: ROPgadget --binary vuln<br><br>
-<img src="images/image109.png"><br><br>
-(snipped)<br><br>
-Unique gadgets found: 32,148<br><br>
-Because there were so many results, we reran ROPgadget and piped the results to a text file for easier searching:<br><br>
-<img src="images/image91.png"><br><br>
-<a href="https://github.com/JonathanSalwan/ROPgadget" target="_blank">https://github.com/JonathanSalwan/ROPgadget</a><br>
-<a href="http://shell-storm.org/project/ROPgadget" target="_blank">http://shell-storm.org/project/ROPgadget</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - STrace]</summary>
-The strace command displays the system calls when a command is executed. You specify the command and its arguments following strace. The system calls and their arguments and returned values are displayed on standard error output.<br><br>
-Note: By default, STrace will only spit out 32 characters, but if your output is getting cut off, you can extend that by customizing how many characters you want to push out, see examples below:<br><br>
-The following was the output of a partial CTF flag with default STrace settings:<br><br>
-<img src="images/image75.jpg"><br><br>
-The following was the output of the full CTF flag once I customized my STrace output settings:<br><br>
-<img src="images/image77.jpg"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - LTrace]</summary>
-Just as strace displays system calls, ltrace displays the functions, arguments, and results of the executed command in the standard error output. ltrace does not reveal from which libraries functions are called.<br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - ObjDump]</summary>
-ObjDump is a command-line program for displaying various information about object files on Unix-like operating systems. For instance, it can be used as a disassembler to view an executable in assembly form.<br><br>
-<a href="https://en.wikipedia.org/wiki/Objdump" target="_blank">https://en.wikipedia.org/wiki/Objdump</a><br>
-<a href="https://www.matteomalvica.com/minutes/binary_analysis" target="_blank">https://www.matteomalvica.com/minutes/binary_analysis</a><br><br>
-<img src="images/image79.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Binary Analysis - ObjCopy]</summary>
-The GNU objcopy utility copies the contents of an object file to another. objcopy uses the GNU BFD Library to read and write the object files. It can write the destination object file in a format different from that of the source object file.<br><br>
-<a href="https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.html" target="_blank">https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.html</a><br>
-<a href="https://sourceware.org/binutils/docs/https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.htmlbinutils/objcopy.html" target="_blank">https://sourceware.org/binutils/docs/https://www.oreilly.com/library/view/linux-in-a/0596004826/re308.htmlbinutils/objcopy.html</a><br><br>
-<a href="https://en.wikipedia.org/wiki/GNU_Binutils" target="_blank">https://en.wikipedia.org/wiki/GNU_Binutils</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - Nmap]</summary>
-CompariTech Nmap CheatSheet:<br><br>
-<img src="images/image134.jpg"><br><br>
-Here's a quick initial scan which pipes the output to a file called “scan.initial”:<br>
-Sudo nmap -sV -sC -oN scan.initial 10.10.147.28<br><br>
-<img src="images/image135.jpg"><br><br>
-Here's another initial scan example which pipes the output to a file called “scan.initial” - this one took quite a bit longer to finish.<br>
-Sudo nmap -A -oN scan.initial 10.10.20.194<br><br>
-<img src="images/image136.jpg"><br><br>
-Here’s an example that we can run on a port that we know is open, so here we know port 80 is open, and we can pipe those results to a file called scan.initial:<br>
-nmap -A -p 80 10.10.129.65 -oN scan.initial<br><br>
-<img src="images/image120.jpg"><br><br>
-Here's one more example, which pipes the output to a file called “scan.initial”. I've heard this called "a classic IppSec scan" since he often begins his streams with this scan:<br>
-nmap -sV -sC -oN scan.initial 10.10.73.1<br><br>
-<img src="images/image121.jpg"><br><br>
-And one more for all of us IppSec fans out there, this is also a common IppSec scan:<br><br>
-nmap -sC -sV -oA nmapScan1 10.10.10.5<br><br>
-The sC is for safe scripts or the most common scripts, sV is for "Enumerate Versions", and oA is for "Output All Formats", and then we call the file “NmapScan1”.<br>
-<a href="https://nmap.org/book/nse-usage.html" target="_blank">https://nmap.org/book/nse-usage.html</a><br>
-<a href="https://www.youtube.com/watch?v=2LNyAbroZUk&ab_channel=IppSec" target="_blank">https://www.youtube.com/watch?v=2LNyAbroZUk&ab_channel=IppSec</a><br><br>
-<img src="images/image123.png"><br><br>
-sudo nmap -F -sV 10.10.11.143<br>
-sudo nmap -v -sC -sV -oA nm nmap/PlayerTwo 10.10.11.143<br>
-Sudo nmap -sS -A -sC -sV -p- -T 410.10.11.143<br>
--sC for default enumeration scripts<br>
--sV for enumerating versions<br>
--F for a Fast Scan<br><br>
-<img src="images/image125.png"><br><br>
-Nmap Port Scan:<br><br>
--p0- asks Nmap to scan every possible TCP port, -v asks Nmap to be verbose about it, -A enables aggressive tests such as remote OS detection, service/version detection, and the Nmap Scripting Engine (NSE). Finally, -T4 enables a more aggressive timing policy to speed up the scan.<br>
-Example: nmap -p0- -v -A -T4 scanme.nmap.org<br>
-<a href="https://nmap.org/book/port-scanning-tutorial.html" target="_blank">https://nmap.org/book/port-scanning-tutorial.html</a><br>
-Nmap w/ Service enumeration on all ports:<br>
-nmap -p- -sV target_ip<br><br>
-<img src="images/image127.png"><br><br>
-Nmap Version Detection Scan:<br>
--sV (Version detection).  Alternatively, you can use -A, which enables version detection among other things.<br>
-<a href="https://nmap.org/book/man-version-detection.html" target="_blank">https://nmap.org/book/man-version-detection.html</a><br><br>
-<img src="images/image128.jpg"><br><br>
-Nmap Full Scan on all ports w/ -oA FullScan which pipes our output to a file called “FullScan”:<br><br>
-<img src="images/image130.jpg"><br><br>
-└─# nmap -sVC -T4 -Pn -p- 10.129.136.188 -oA FullScan<br><br>
-Nmap Syn Scan:<br><br>
-nmap -sS<br><br>
-<img src="images/image113.png"><br><br>
-Nmap Ping Scan:<br><br>
-nmap -sn 10.10.89.196<br><br>
-<img src="images/image115.png"><br><br>
-Nmap Version Enumeration Scan:<br><br>
-nmap -sV 10.10.89.196<br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - MasScan]</summary>
-<a href="https://github.com/robertdavidgraham/masscan" target="_blank">https://github.com/robertdavidgraham/masscan</a><br><br>
-MasScan is incredibly powerful and quick but it can break things, for example be careful scanning ICS.<br>
-masscan -p1-65535 10.10.129.65 --rate=1000 -e tun0<br><br>
-<img src="images/image118.jpg"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - SMBmap]</summary>
-smbmap -u ubuntu -p S@nta2022 -d workgroup -H 10.10.112.67<br><br>
-<img src="images/image175.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - GoBuster]</summary>
-GoBuster is a tool to catalogue directories. GoBuster can take significantly longer to complete than some of the other Dir searching tools, but that might not necessarily be a bad thing:<br><br>
-gobuster dir -u 10.10.11.143 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
-<img src="images/image153.png"><br><br>
-└─# gobuster dir -u 10.10.11.143 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
-
-===============================================================<br><br>
-
-Gobuster v3.1.0<br><br>
-
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)<br><br>
-
-===============================================================<br><br>
-
-[+] Url:                     http://10.10.11.143<br><br>
-
-[+] Method:                  GET<br><br>
-
-[+] Threads:                 10<br><br>
-
-[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt<br><br>
-
-[+] Negative Status codes:   404<br><br>
-
-[+] User Agent:              gobuster/3.1.0<br><br>
-
-[+] Timeout:                 10s<br><br>
-
-===============================================================<br><br>
-
-2022/05/13 16:44:32 Starting gobuster in directory enumeration mode<br><br>
-
-===============================================================<br><br>
-
-/manual               (Status: 301) [Size: 235] [--> http://10.10.11.143/manual/]<br><br>
-
-===============================================================<br><br>
-
-2022/05/13 16:53:14 Finished<br><br>
-
-===============================================================<br><br>
-
-Another GoBuster Example Below:<br><br>
-
-<img src="images/image185.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - DirSearch]</summary>
-DirSearch is a robust web content discovery tool:<br><br>
-dirsearch -u http://SiteYouWantToSearch -e php<br><br>
-<img src="images/image184.png_Edited"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - FeroxBuster]</summary>
-A simple, fast, recursive content discovery tool written in Rust.  Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.  feroxbuster uses brute force combined with a wordlist to search for unlinked content in target directories. These resources may store sensitive information about web applications and operational systems, such as source code, credentials, internal network addressing, etc.  This attack is also known as Predictable Resource Location, File Enumeration, Directory Enumeration, and Resource Enumeration.<br><br>
-<a href="https://github.com/epi052/feroxbuster" target="_blank">https://github.com/epi052/feroxbuster</a><br><br>
-<a href="https://epi052.github.io/feroxbuster-docs/docs" target="_blank">https://epi052.github.io/feroxbuster-docs/docs</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - Sublist3r]</summary>
-Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT.<br>
-<a href="https://www.kali.org/tools/sublist3r" target="_blank">https://www.kali.org/tools/sublist3r</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - Ffuf]</summary>
-A fast web fuzzer for directory discovery, virtual host discovery, and GET/POST parameter fuzzing.
-<a href="https://github.com/ffuf/ffuf" target="_blank">https://github.com/ffuf/ffuf</a><br>
-<a href="https://www.tsustyle.com/cheatsheets/ffuf-cheatsheet" target="_blank">https://www.tsustyle.com/cheatsheets/ffuf-cheatsheet</a><br>
-<a href="https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html" target="_blank">https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html</a><br>
-<a href="https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo" target="_blank">https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo</a><br>
-<a href="https://www.youtube.com/watch?v=aN3Nayvd7FU&ab_channel=InsiderPhD" target="_blank">https://www.youtube.com/watch?v=aN3Nayvd7FU&ab_channel=InsiderPhD</a><br><br>
-
-Ffuf Example:<br><br>
-
-└─# ffuf -u http://10.10.147.28/FUZZ -w /usr/share/wordlists/dirb/common.txt<br>
-
-        /'___\  /'___\           /'___\        
-       /\ \__/ /\ \__/  __  __  /\ \__/        
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\       
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/       
-         \ \_\   \ \_\  \ \____/  \ \_\        
-          \/_/    \/_/   \/___/    \/_/
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Discovery - Wfuzz]</summary>
-Wfuzz is a WebApp framework for finding directories, scripts, etc. 
-<a href="https://github.com/xmendez/wfuzz" target="_blank">https://github.com/xmendez/wfuzz</a><br>
-<a href="https://wfuzz.readthedocs.io/en/latest" target="_blank">https://wfuzz.readthedocs.io/en/latest</a><br>
-<a href="https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo" target="_blank">https://www.youtube.com/watch?v=QBW70TdxzKo&ab_channel=FuzzingLabs-PatrickVentuzelo</a><br><br>
-
-└─$ wfuzz -w /usr/share/wordlists/wfuzz/webservices/ws-dirs.txt -u http://host1.metaproblems.com:5730/FUZZ<br><br>
-
-/usr/lib/python3/dist-packages/wfuzz/__init__.py:34: UserWarning:Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.<br><br>
-
-********************************************************<br><br>
-
-* Wfuzz 3.1.0 - The Web Fuzzer                         *<br><br>
-
-********************************************************<br><br>
-
-Target: http://host1.metaproblems.com:5730/FUZZ<br><br>
-
-Total requests: 48<br><br>
-
-=====================================================================<br><br>
-
-ID           Response   Lines    Word       Chars       Payload<br><br>                 
-
-=====================================================================<br><br>
-
-000000001:   404        9 L      31 W       286 Ch      "ServiceDefinition"<br><br>  
-
-000000024:   404        9 L      31 W       286 Ch      "oracle"<br><br>      
-
-000000015:   404        9 L      31 W       286 Ch      "jboss-net"<br><br>       
-
-000000020:   404        9 L      31 W       286 Ch      "name"<br><br>        
-
-000000021:   404        9 L      31 W       286 Ch      "names"<br><br>          
-
-000000022:   404        9 L      31 W       286 Ch      "operation"<br><br>
-
-000000023:   404        9 L      31 W       286 Ch      "operations"<br><br> 
-
-000000003:   404        9 L      31 W       286 Ch      "atom"<br><br>       
-
-000000007:   404        9 L      31 W       286 Ch      "disco"<br><br>
-
-000000025:   404        9 L      31 W       286 Ch      "proxy"<br><br>      
-
-000000019:   404        9 L      31 W       286 Ch      "methods"<br><br>       
-
-000000018:   404        9 L      31 W       286 Ch      "manual"<br><br>     
-
-000000016:   404        9 L      31 W       286 Ch      "jbossws"<br><br>          
-
-000000009:   404        9 L      31 W       286 Ch      "index"<br><br>                
-
-000000006:   404        9 L      31 W       286 Ch      "default"<br><br>                
-
-000000017:   404        9 L      31 W       286 Ch      "juddi"<br><br>                 
-
-000000010:   404        9 L      31 W       286 Ch      "inquire"<br><br>               
-
-000000012:   404        9 L      31 W       286 Ch      "inspection"<br><br>              
-
-000000014:   404        9 L      31 W       286 Ch      "interfaces"<br><br>              
-
-000000013:   404        9 L      31 W       286 Ch      "interface"<br><br>              
-
-000000011:   404        9 L      31 W       286 Ch      "inquiryapi"<br><br>             
-
-000000008:   404        9 L      31 W       286 Ch      "extwsdl"<br><br>               
-
-000000026:   404        9 L      31 W       286 Ch      "publish"<br><br>              
-
-000000045:   404        9 L      31 W       286 Ch      "wsdl"<br><br>                    
-
-000000004:   404        9 L      31 W       286 Ch      "axis"<br><br>                    
-
-000000002:   404        9 L      31 W       286 Ch      "admin"<br><br>                   
-
-000000044:   404        9 L      31 W       286 Ch      "wsatom"<br><br>                  
-
-000000046:   404        9 L      31 W       286 Ch      "wsgw"<br><br>                   
-
-000000040:   404        9 L      31 W       286 Ch      "webserviceclient+ssl"<br><br>   
-
-000000032:   404        9 L      31 W       286 Ch      "svce"<br><br>                    
-
-000000005:   404        9 L      31 W       286 Ch      "context"<br><br>                 
-
-000000028:   404        9 L      31 W       286 Ch      "query"<br><br>                   
-
-000000042:   404        9 L      31 W       286 Ch      "ws"<br><br>                      
-
-000000039:   404        9 L      31 W       286 Ch      "webserviceclient"<br><br>       
-
-000000043:   404        9 L      31 W       286 Ch      "ws4ee"<br><br>                  
-
-000000034:   404        9 L      31 W       286 Ch      "uddiexplorer"<br><br>            
-
-000000030:   404        9 L      31 W       286 Ch      "service"<br><br>                
-
-000000027:   404        9 L      31 W       286 Ch      "publishing"<br><br>              
-
-000000036:   404        9 L      31 W       286 Ch      "uddilistener"<br><br>            
-
-000000033:   404        9 L      31 W       286 Ch      "uddi"<br><br>                    
-
-000000041:   404        9 L      31 W       286 Ch      "webservices"<br><br>             
-
-000000035:   404        9 L      31 W       286 Ch      "uddigui"<br><br>                
-
-000000038:   404        9 L      31 W       286 Ch      "webservice"<br><br>              
-
-000000037:   404        9 L      31 W       286 Ch      "uddisoap"<br><br>                
-
-000000031:   404        9 L      31 W       286 Ch      "services"<br><br>                
-
-000000029:   404        9 L      31 W       286 Ch      "rss"<br><br>                     
-
-000000048:   404        9 L      31 W       286 Ch      "xmethods"<br><br>                
-
-000000047:   404        9 L      31 W       286 Ch      "wsil"<br><br>                    
-
-Total time: 0<br><br>
-
-Processed Requests: 48<br><br>
-
-Filtered Requests: 0<br><br>
-
-Requests/sec.: 0<br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Memory Analysis - Volatility]</summary>
-Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system.<br>
-
-<a href="https://www.volatilityfoundation.org/releases-vol3" target="_blank">https://www.volatilityfoundation.org/releases-vol3</a><br>
-<a href="https://github.com/volatilityfoundation/volatility3" target="_blank">https://github.com/volatilityfoundation/volatility3</a><br>
-<a href="https://github.com/volatilityfoundation/volatility/wiki/Command-Reference" target="_blank">https://github.com/volatilityfoundation/volatility/wiki/Command-Reference</a><br>
-<a href="https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html" target="_blank">https://www.securitynik.com/2022/03/beginning-volatility3-memory-forensics.html</a><br>
-<a href="https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility" target="_blank">https://andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility</a><br>
-<a href="https://www.youtube.com/watch?v=GRmTBugm4js&t=43s" target="_blank">https://www.youtube.com/watch?v=GRmTBugm4js&t=43</a><br>
-<a href="https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html" target="_blank">https://malwarenailed.blogspot.com/2019/06/suspicious-strings-in-memory.html</a><br>
-<a href="https://github.com/volatilityfoundation/volatility3/issues/565" target="_blank">https://github.com/volatilityfoundation/volatility3/issues/565</a><br>
-<a href="https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6" target="_blank">https://infosecwriteups.com/memory-analysis-for-beginners-with-volatility-coreflood-trojan-part-1-89981433eeb6</a><br>
-<a href="https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis" target="_blank">https://evild3ad.com/956/volatility-memory-forensics-basic-usage-for-malware-analysis</a><br>
-<a href="https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc" target="_blank">https://medium.com/@gabriel.pirjolescu/demystifying-windows-malware-hunting-part-2-detecting-execution-with-volatility-1a139b194bfc</a><br>
-<a href="https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility" target="_blank">https://resources.infosecinstitute.com/topic/ransomware-analysis-with-volatility</a><br>
-<a href="https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls" target="_blank">https://andreafortuna.org/2017/07/03/volatility-my-own-cheatsheet-part-2-processes-and-dlls</a><br><br>
-
-Running Volatility in Kali is pretty straight forward:<br><br>
-<img src="images/image81.jpg"><br><br>
-
---> Note - If you are inside the “volatility3” directory, you would alter these:<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.malfind.Malfind >Malfind.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.pslist.PsList >PSList.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.pstree.PsTree >PStree.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.userassist.UserAssist >UserAssist.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.handles.Handles >Handles.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.psscan.PsScan >PSscan.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.privileges.Privs >Privileges.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.cmdline.CmdLine >CMDline.txt<br><br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw  windows.bigpools.BigPools >BigPools.txt<br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
-
-python3 vol.py -f /home/kali/Desktop/memory.raw windows.callbacks.Callbacks >Callbacks.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivescan.HiveScan >HiveScan.txt<br>
-
-python3 volatility3/vol.py -f MEMORY.DMP windows.registry.hivelist.HiveList >HiveList.txt<br>
-
-python3 vol.py -f '/home/kali/Desktop/memory.raw' windows.hashdump.Hashdump >/home/kali/Desktop/Hashes.txt<br>
-
-python vol.py -f /home/kali/Desktop/memory.raw windows.memmap.Memmap >/home/kali/Desktop/MemMap.txt<br>
-
-python3 vol.py -f '/home/kali/Desktop/m3m0ry_n3v3r_f0rg3tz.raw' windows.filescan.FileScan >/home/kali/Desktop/FileScan.txt<br><br>
-
-CAUTION: THIS FILLS DESKTOP w/ files: python3 volatility3/vol.py -f MEMORY.DMP windows.dumpfiles.DumpFiles >DumpFiles.txt<br><br>
-
--It needs to be used with, for example, an offset such as the following, and an output folder:<br><br>
-
-(a) python3 vol.py -f '/home/kali/Desktop/mem.raw' -o dump windows.dumpfiles.DumpFiles --virtaddr 0xbd8fb6c02370<br>
-
-(b) python3 vol.py -f '/home/kali/Desktop/RAM.mem' -o /home/kali/Desktop/dump windows.dumpfiles.DumpFiles --physaddr 0x000000007f08fb58<br><br>
-
-[--virtaddr VIRTADDR] [--physaddr PHYSADDR]<br>
-optional arguments:<br>
-  -h, --help           show this help message and exit<br>
-  --pid PID            Process ID to include (all other processes are excluded)<br>
-  --virtaddr VIRTADDR  Dump a single _FILE_OBJECT at this virtual address<br>
-  --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
-</details>
-
 
 
 <details>
