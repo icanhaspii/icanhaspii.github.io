@@ -6,6 +6,12 @@
   <summary>[Linux Analysis Commands]</summary>
 <details markdown>
   <br>
+    <summary>[Linux Analysis Commands Julia Evans' CheatSheet]</summary>
+Thank you Julia Evans! See more of her art here:<br><br>
+<img src="images/226.jpg"><br><br>
+<a href="https://wizardzines.com" target="_blank">https://wizardzines.com</a><br><br>
+</details>
+  <br>
     <summary>[Linux Analysis Commands - file]</summary>
 Run this to determine what type of file you are dealing with:<br><br>
 <img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
