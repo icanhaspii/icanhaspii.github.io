@@ -2,7 +2,8 @@
 ## These are my CTF Hacks!  I hope you enjoy!
 <details markdown>
   <br>
-  <summary>[Linux Analysis Commands]</summary>
+  <summary><li><B>[Linux Analysis Commands]</B></li></summary>
+
 
 <details markdown>
   <br>
