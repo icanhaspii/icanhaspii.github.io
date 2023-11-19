@@ -2,11 +2,13 @@
 ## These are my CTF Hacks!  I hope you enjoy!
 <details markdown>
   <br>
-  <summary><B>[Linux Analysis Commands]</B></summary>
-  
+  <summary>[Linux Analysis Commands]</summary>
+Run this to determine what type of file you are dealing with:<br><br>
+<img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
+
 <details markdown>
   <br>
-    <summary><li><B>[Linux Analysis Commands - file]</B></li></summary>
+    <summary>[Linux Analysis Commands - file]</summary>
 Run this to determine what type of file you are dealing with:<br><br>
 <img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
 </details>
@@ -183,187 +185,6 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - file]</summary>
-Run this to determine what type of file you are dealing with:<br><br>
-<img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - binwalk]</summary>
-Run this to view a summary of the file contents:<br><br>
-<img src="images/BinWalk_Screenshot 2023-10-03 203227.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - strings]</summary>
-Run this to get the list of printable characters from files.  You can even run strings on a Pcap!  Or, say for example, that you have something you think contains a flag and you know that flag is in the typical CTF format of flag{some_bonus}, you can run the following to cut down on the amount of data you have to parse through. The following will only yield lines of 8 characters or more:<br><br>
-<img src="images/Strings_Screenshot 2023-05-12 172558.jpg"><br><br>
-You can also combine strings and grep:<br><br>
-<img src="images/Strings_Screenshot 2023-05-12 174704.jpg">
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - java -jar]</summary>
-The java -jar command will open a .jar file:<br><br>
-<img src="images\Java_JarStegSolveHowTo.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - java]</summary>
-The java command will open a .java file:<br><br>
-<img src="images/Java_Screenshot 2022-06-15 085349_Edited.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - base64]</summary>
-The base64 decode command will decode a b64 string.  There’s more than one way to invoke the base64 decode command, here are few:<br><br>
-1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=<br><br>
-2. Type the following into your Linux command prompt to echo/print to screen:<br><br>
-echo 'Umlja19SMGxsM2Q=' | base64 -d<br><br>
-3. Hit ENTER<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 172521.png"><br><br>
-4. If you’re feeling really fancy, and you are playing a CTF, you can run the following to echo/print your decoded b64 in standard flag format to your screen:<br><br>
-echo "flag{$(echo 'Umlja19SMGxsM2Q=' | base64 -d)}"<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 180945.png"><br><br>
--Here’s another way:<br><br>
-1. Grab a base64 encoded string such as: Umlja19SMGxsM2Q=<br><br>
-2. Type the following into your Linux command prompt:<br><br>
-Base64 –d<br><br>
-3. Hit ENTER<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 173111.png"><br><br>
-4. At the prompt, paste in your base64 encoded string:<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 173249.png"><br><br>
-5. Hit ENTER again:<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 173640.png"><br><br>
-6. Finally, hit Control-D on your keyboard:<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 172847.png"><br><br>
--And yet another method:<br><br>
-1. Save your base64 encoded string into a text editor:<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 174625.png"><br><br>
-2. Type the following into your Linux command prompt to echo/print to screen:<br><br>
-base64 -d dns.txt >decoded.txt<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 174546.png"><br><br>
-3. Open your new file, “decoded.txt”:<br><br>
-<img src="images/Base64_Screenshot 2023-11-08 174720.png"><br><br>
-If you run across encoding similar to below:<br><br>
-IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String<br><br>
-[IO.Compression.CompressionMode]::Decompress<br><br>
-You can try the following “Recipe” in CyberChef to decode:<br><br>
-(a)From_Base64('A-Za-z0-9%2B/%3D',true,false)<br><br>
-(b) Raw_Inflate(0,0,%5B'Adaptive','Block'%5D,false,false)<br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - ifconfig]</summary>
-To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
-<img src="images/ip_Screenshot 2023-11-09 105007.png"><br><br>
-<img src="images/ip_Screenshot 2023-11-09 104951.png"><br><br>
-<img src="images/ip_Screenshot 2023-11-09 104928.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - realpath]</summary>
-realpath converts each filename argument to an absolute pathname, which has no components that are symbolic links or the special . or .. directory entries. Each path component in the filename must exist, otherwise realpath will fail and non-zero exit status will be returned.<br><br>
-href="https://www.google.com/url?q=https://linux.die.net/man/1/realpath&amp;sa=D&amp;source=editors&amp;ust=1699590511374365&amp;usg=AOvVaw1FkT0L7tNSOCrQIqhPv2FA">https://linux.die.net/man/1/realpath</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - SSH]</summary>
-To find your ip address and network configuration, you can use the old ifconfig command (considered depreciated), or the newer ip address command.  It works with any of the following, and of course more in depth combined with switches:<br><br>
-https://www.lrz.de/services/compute/courses/x_lecturenotes/191007_OpenSSH_Tutorial_2019.pdf<br><br>
-https://opensource.com/article/20/9/ssh<br><br>
-<img src="images/image181.jpg"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - chmod]</summary>
-chmod +x<br><br>
-Note: chmod +x (plus x) stands for execute.<br><br>
-Question:<br><br>
-I want to write the Ubuntu analogue of a "batch file" (a shell script). But I don't know how to use chmod +x filename command to make it so that the script can be run. Nor do I know where to use it.<br><br>
-Answer:<br><br>
-chmod +x on a file (your script) only means, that you'll make it executable. Right click on your script and chose Properties -> Permissions -> Allow executing file as program, leaves you with the exact same result as the command in terminal.<br><br>
-If a file you want to change permissions on is located within the systems directory you may need to be root, like so: (be careful, while using sudo command)<br><br>
-sudo chmod +x /usr/share/testfolder/aFile<br><br>
-https://askubuntu.com/questions/443789/what-does-chmod-x-filename-do-and-how-do-i-use-it<br><br>
-Question:<br><br>
-What is the difference between chmod u+x and just chmod +x? I have seen a ton of tutorials that say to use u+x to make scripts executable. However, omitting the u doesn't seem to have any effect.<br><br>
-Answer:<br><br>
-The man page of chmod covers that.<br><br>
-u stands for user.<br><br>
-g stands for group.<br><br>
-o stands for others.<br><br>
-a stands for all.<br><br>
-That means that chmod u+x somefile will grant only the owner of that file execution permissions whereas chmod +x somefile is the same as chmod a+x somefile.<br><br>
-<a href="https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x" target="_blank">https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - chown]</summary>
-To give a file permissions so that a regular user can move it or edit it, you can run the following:<br><br>
-# chown kali NTUSER.DAT.dat<br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - Bash]</summary>
-Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.<br><br>
-<a href="https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners" target="_blank">https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners</a><br><br>
-Some of the main delimiters (terminators or redirectors) for Bash commands are as follows:<br>
-whoami; whoami<br>
-whoami|<br><br>
-> (output to)<br>
-|| (double pipe)<br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - grep]</summary>
-Some common grep options:<br><br>
-<img src="images/image165.png"><br><br>
-<img src="images/Screenshot 2023-11-15 203316.png"><br><br>
-grep example: cat cowrie.log.wwhf2020_lab2 | grep CMD<br><br>
-<img src="images/image163.jpg"><br><br>
-<img src="images/image155.jpg"><br><br>
-Count w/ grep:<br><br>
-<img src="images/image154.png"><br><br>
-<img src="images/image158.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Linux Analysis Commands - curl]</summary>
-Curl is useful in transferring data without user interaction.<br><br>
-curl http://nidus-setup:8080<br><br>
-curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/json" --data-binary '{"temperature":1000}'<br><br>
-<img src="images/image157.png"><br><br>
-</details>
 
 
 <details markdown>
@@ -1251,11 +1072,4 @@ optional arguments:<br>
 
 </body>
 </html>
-
--->
-
-
-
-
-
 
