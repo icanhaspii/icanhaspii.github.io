@@ -1,6 +1,8 @@
 # icanhaspii-CTF CheatSheet
 ## These are my CTF Hacks!  I hope you enjoy!
+<head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
 <details markdown>
   <br>
   <summary>[Linux Analysis Commands]</summary>
