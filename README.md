@@ -173,6 +173,69 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 
 
 
+<details markdown>
+  <summary>[Pcap Analysis]</summary>
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - strings]</summary>
+Strings<br><br>
+You can run strings on a Pcap! Below are a couple examples (I like to pipe my results to a .txt file for easier review):<br><br>
+<img src="images/StringsPcap_Screenshot 2023-11-09 184958.png"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - TShark]</summary>
+<a href="https://osqa-ask.wireshark.org/questions/38071/how-to-extract-ip-addresses-from-cap-file-to-text-file" target="_blank">You can extract ip addresses from a Pcap using Tshark</a><br><br>
+To extract just the destination ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211016.jpg"><br><br>
+To extract both the destination ip and the source ip, type the following command:<br><br>
+<img src="images/TShark_Screenshot 2023-03-16 211435.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - Zeek]</summary>
+<a href="https://www.youtube.com/watch?v=bznH1yMyjjo&ab_channel=JohnHubbard" target="_blank">John Hubbard has a fantastic install video</a><br><br>
+Zeek installs itself here:<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006_Edited.jpg"><br><br>
+To export logs from a Pcap into Zeek format, type the following syntax (r is for read):<br><br>
+<img src="images/Zeek_Screenshot 2023-03-24 201006.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - RITA]</summary>
+RITA (Real Intelligence Threat Analytics):<br><br>
+<a href="https://www.activecountermeasures.com/free-tools/rita" target="_blank">RITA is named in honor of John Strand’s mother who is no longer with us but will always be remembered in this loving way</a><br><br>
+<a href="https://www.youtube.com/watch?v=QcQmG5KTLpo&ab_channel=ActiveCountermeasures" target="_blank">Chris Brenton has a fantastic install video</a><br><br>
+To import logs from Zeek format into RITA, navigate via command line to the folder where your exported Pcap logs are:<br><br>
+<img src="images/image62.jpg"><br><br>
+Next, type the following syntax (LogsOily was the name of my pcap, so I called the output folder for RITA the same name):<br><br>
+<img src="images/image64.png"><br><br>
+RITA will tell you when it’s done:<br><br>
+<img src="images/image66.jpg"><br><br>
+</details>
+
+<details markdown>
+  <br>
+    <summary>[Pcap Analysis - TCPflow]</summary>
+TCPflow is a command-line tool for processing streams.<br>
+<a href="https://linux.die.net/man/1/tcpflow" target="_blank">https://linux.die.net/man/1/tcpflow</a><br>
+<a href="https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#" target="_blank">https://www.geeksforgeeks.org/tcp-flow-analyze-and-debug-network-traffic-in-linux/#</a><br>
+<a href="https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf" target="_blank">https://simson.net/ref/2013/2013-12-05_tcpflow-and-BE-update.pdf</a><br><br>
+<img src="images/image183.png"><br><br>
+<img src="images/image209.png"><br><br>
+</details>
+</details>
+
+
+
+
+
+
+
+
 
 
 
