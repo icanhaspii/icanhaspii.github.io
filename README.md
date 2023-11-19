@@ -882,6 +882,32 @@ optional arguments:<br>
 
 
 
+<details markdown>
+  <br>
+  <summary>[Photo Editors/Photo Forensics]</summary>
+<details markdown>
+  <br>
+    <summary>[Photo Editors/Photo Forensics - Some Resources]</summary>
+<a href="https://www.photopea.com" target="_blank">https://www.photopea.com</a><br>
+<a href="https://29a.ch/photo-forensics/#forensic-magnifier" target="_blank">https://29a.ch/photo-forensics/#forensic-magnifier</a><br><br>
+</details>
+</details>
+
+
+
+
+<details markdown>
+  <br>
+  <summary>[OCR - Google Image Search Offers OC]</summary>
+<details markdown>
+  <br>
+    <summary>[OCR - Google Image Search Offers OC - Some Resources]</summary>
+<a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl" target="_blank">https://www.google.com/imghp?hl=en&tab=ri&ogbl</a><br><br>
+</details>
+</details>
+
+
+
 
 
 
@@ -982,18 +1008,6 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 
 
-<details markdown>
-  <br>
-  <summary>[Photo Editors/Photo Forensics]</summary>
-<a href="https://www.photopea.com" target="_blank">https://www.photopea.com</a><br>
-<a href="https://29a.ch/photo-forensics/#forensic-magnifier" target="_blank">https://29a.ch/photo-forensics/#forensic-magnifier</a><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[OCR - Google Image Search Offers OC]</summary>
-<a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl" target="_blank">https://www.google.com/imghp?hl=en&tab=ri&ogbl</a><br><br>
-</details>
 
 <details markdown>
   <br>
