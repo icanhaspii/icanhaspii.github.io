@@ -1,6 +1,7 @@
 # icanhaspii-CTF CheatSheet
 ## These are my CTF Hacks!  I hope you enjoy!
 <details markdown>
+  <br>
   <summary>[Linux Analysis Commands]</summary>
 <details markdown>
   <br>
@@ -898,7 +899,7 @@ optional arguments:<br>
 
 <details markdown>
   <br>
-  <summary>[OCR - Google Image Search Offers OC]</summary>
+  <summary>[OCR - Google Image Search Offers OCR]</summary>
 <details markdown>
   <br>
     <summary>[OCR - Google Image Search Offers OC - Some Resources]</summary>
@@ -908,64 +909,12 @@ optional arguments:<br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <details markdown>
   <br>
-  <summary>[Audio - Decoders/Analyzers]</summary>
+  <summary>[Audio]</summary>
+<details markdown>
+  <br>
+    <summary>[Audio - Decoders/Analyzers - Some Resources]</summary>
 Note from Dcode regarding T9 vs Multitap Confusion:<br>
 Multitap ABC should not be confused with T9 predictive text. For example,'DCODE' is written '3222666333' in Multitap and '32633' in T9.<br>
 <a href="https://twitter.com/_johnhammond/status/1244277165316857857?lang=en" target="_blank">https://twitter.com/_johnhammond/status/1244277165316857857?lang=en</a><br><br>
@@ -995,15 +944,23 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 
 <details markdown>
   <br>
-  <summary>[Audio - Extract Morse Code from an audio file]</summary>
+    <summary>[Audio - Extract Morse Code from an audio file]</summary>
 <a href="https://morsecode.world/international/decoder/audio-decoder-adaptive.html" target="_blank">https://morsecode.world/international/decoder/audio-decoder-adaptive.html</a><br>
 <a href="https://databorder.com/transfer/morse-sound-receiver" target="_blank">https://databorder.com/transfer/morse-sound-receiver</a><br><br>
 </details>
+</details>
+
+
+
 
 <details markdown>
   <br>
   <summary>[Large Number/Big Integer/Big Number converter]</summary>
+<details markdown>
+  <br>
+    <summary>[Large Number/Big Integer/Big Number converter - Some Resources]</summary>
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
+</details>
 </details>
 
 
@@ -1012,16 +969,28 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <details markdown>
   <br>
   <summary>[Reverse Text/Mirror Text/Backward Text/Upsidedown Text]</summary>
+<details markdown>
+  <br>
+    <summary>[Reverse Text/Mirror Text/Backward Text/Upsidedown Text - Some Resources]</summary>
 <a href="https://www.flipyourtext.com" target="_blank">https://www.flipyourtext.com</a><br><br>
 <img src="images/image199.png"><br><br>
 <a href="https://www.upsidedowntext.com" target="_blank">https://www.upsidedowntext.com</a><br><br>
 </details>
+</details>
+
+
+
 
 <details markdown>
   <br>
   <summary>[PDF Analysis - PDF Editors]</summary>
+<details markdown>
+  <br>
+    <summary>[PDF Analysis - PDF Editors - Some Resources]</summary>
 <a href="https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
 </details>
+</details>
+
 
 
 <details>
