@@ -171,7 +171,7 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 <img src="images/image157.png"><br><br>
 </details>
 </details>
-
+<BR><BR>
 
 
 
