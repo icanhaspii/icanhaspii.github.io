@@ -980,76 +980,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
 </details>
 
-<details markdown>
-  <br>
-  <summary>[Stego - Some Resources]</summary>
-<a href="https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography" target="_blank">https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/steganography</a><br>
-<a href="https://www.kali.org/tools/steghide" target="_blank">https://www.kali.org/tools/steghide</a><br>
-<a href="https://steghide.sourceforge.net" target="_blank">https://steghide.sourceforge.net</a><br>
-<a href="https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux" target="_blank">https://www.geeksforgeeks.org/how-to-install-steghide-tool-in-linux</a><br>
-<a href="https://stegonline.georgeom.net/upload" target="_blank">https://stegonline.georgeom.net/upload</a><br>
-<a href="http://magiceye.ecksdee.co.uk" target="_blank">http://magiceye.ecksdee.co.uk</a><br>
-<a href="https://manytools.org/hacker-tools/steganography-encode-text-into-image" target="_blank">https://manytools.org/hacker-tools/steganography-encode-text-into-image</a><br>
-<a href="https://www.mobilefish.com/services/steganography/steganography.php" target="_blank">https://www.mobilefish.com/services/steganography/steganography.php</a><br>
-<a href="http://stylesuxx.github.io/steganography" target="_blank">http://stylesuxx.github.io/steganography</a><br>
-<a href="https://futureboy.us/stegano" target="_blank">https://futureboy.us/stegano</a><br>
-<a href="https://neatnik.net/steganographr" target="_blank">https://neatnik.net/steganographr</a><br>
-<a href="https://wiki.bi0s.in/steganography/zsteg" target="_blank">https://wiki.bi0s.in/steganography/zsteg</a><br>
-<a href="https://github.com/zed-0xff/zsteg" target="_blank">https://github.com/zed-0xff/zsteg</a><br>
-<a href="https://github.com/ragibson/Steganography#WavSteg" target="_blank">https://github.com/ragibson/Steganography#WavSteg</a><br>
-<a href="https://github.com/ragibson/Steganography#lsbsteg" target="_blank">https://github.com/ragibson/Steganography#lsbsteg</a><br>
-<a href="https://github.com/ragibson/Steganography#stegdetect" target="_blank">https://github.com/ragibson/Steganography#stegdetect</a><br>
-<a href="https://github.com/pavanchhatpar/wav-steg-py" target="_blank">https://github.com/pavanchhatpar/wav-steg-py</a><br>
-<a href="https://0xrick.github.io/lists/stego" target="_blank">https://0xrick.github.io/lists/stego</a><br>
-<a href="https://www.linuxlinks.com/wavsteg-uses-least-significant-bit-steganography" target="_blank">https://www.linuxlinks.com/wavsteg-uses-least-significant-bit-steganography</a><br>
-<a href="https://www.abc.se/~re/Coagula/Coagula.html" target="_blank">https://www.abc.se/~re/Coagula/Coagula.html</a><br>
-<a href="https://www.stenge.info/post/steganography" target="_blank">https://www.stenge.info/post/steganography</a><br>
-<a href="https://cheatography.com/aleksandrm/cheat-sheets/coagula-cheat-sheet" target="_blank">https://cheatography.com/aleksandrm/cheat-sheets/coagula-cheat-sheet</a><br>
-<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank">https://github.com/zardus/ctf-tools/blob/master/stegsolve/install</a><br>
-<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank">http://www.caesum.com/handbook/Stegsolve.jar</a><br>
-<a href="https://www.hanynet.com/isteg" target="_blank">https://www.hanynet.com/isteg</a><br>
-<a href="https://github.com/rafiibrahim8/iSteg" target="_blank">https://github.com/rafiibrahim8/iSteg</a><br><br>
-</details>
 
-<details markdown>
-  <br>
-  <summary>[Stego - iSteg]</summary>
-<a href="https://github.com/rafiibrahim8/iSteg" target="_blank">https://github.com/rafiibrahim8/iSteg</a><br><br>
-1. Navigated to: <a href="https://github.com/rafiibrahim8/iSteg/releases/tag/v2.1" target="_blank"> https://github.com/rafiibrahim8/iSteg/releases/tag/v2.1.</a><br>
-2. Downloaded the file: iSteg-v2.1_GUI.jar.<br>
-3. Ran chmod +x on the download file to give it executable permissions.<br>
-└─# chmod +x iSteg-v2.1_GUI.jar<br>
-4. Launched the program in Java:<br>
-└─# java -jar iSteg-v2.1_GUI.jar<br><br>
-<img src="images/image211.png"><br><br>
-5. Chose the hidden.png file and it opened to the flag, flag{YouFoundMe}:<br><br>
-<img src="images/image213.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[Stego - StegSolve]</summary>
-<a href="https://github.com/zardus/ctf-tools/blob/master/stegsolve/install" target="_blank">https://github.com/zardus/ctf-tools/blob/master/stegsolve/install</a><br>
-<a href="http://www.caesum.com/handbook/Stegsolve.jar" target="_blank">http://www.caesum.com/handbook/Stegsolve.jar</a><br>
-1. wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar<br>
-2. chmod +x stegsolve.jar<br>
-3. Run by typing: java –jar stegsolve.jar (make sure you’re in the same directory)<br>
-4. Choose “File” --> Open and load your picture:<br><br>
-<img src="images/image201.png"><br><br>
-</details>
-
-<details markdown>
-  <br>
-  <summary>[File Headers/Magic Bytes/File Types/Carving Files]</summary>
-<a href="https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5" target="_blank">https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5</a><br>
-<a href="https://en.wikipedia.org/wiki/List_of_file_signatures" target="_blank">https://en.wikipedia.org/wiki/List_of_file_signatures</a><br>
-<a href="https://www.garykessler.net/library/file_sigs.html" target="_blank">https://www.garykessler.net/library/file_sigs.html</a><br>
-<a href="https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance" target="_blank">https://www.netspi.com/blog/technical/web-application-penetration-testing/magic-bytes-identifying-common-file-formats-at-a-glance</a><br>
-<a href="https://anilsoni85.blogspot.com/2014/11/basics-of-png-file-format-with-libpng.html" target="_blank">https://anilsoni85.blogspot.com/2014/11/basics-of-png-file-format-with-libpng.html</a><br>
-<a href="https://asecuritysite.com/forensics/png?file=%2Flog%2Fbasn0g01.png" target="_blank">https://asecuritysite.com/forensics/png?file=%2Flog%2Fbasn0g01.png</a><br>
-<a href="https://www.red-gate.com/simple-talk/blogs/anatomy-of-a-net-assembly-pe-headers" target="_blank">https://www.red-gate.com/simple-talk/blogs/anatomy-of-a-net-assembly-pe-headers</a><br>
-<a href="https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s" target="_blank">https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s</a><br><br>
-</details>
 
 <details markdown>
   <br>
