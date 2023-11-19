@@ -474,6 +474,7 @@ Filtered Requests: 0<br><br>
 Requests/sec.: 0<br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -532,6 +533,7 @@ TCPflow is a command-line tool for processing streams.<br>
 <img src="images/image209.png"><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -719,6 +721,7 @@ The GNU objcopy utility copies the contents of an object file to another. objcop
 <a href="https://en.wikipedia.org/wiki/GNU_Binutils" target="_blank">https://en.wikipedia.org/wiki/GNU_Binutils</a><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -797,6 +800,8 @@ optional arguments:<br>
   --physaddr PHYSADDR  Dump a single _FILE_OBJECT at this physical address<br><br>
 </details>
 </details>
+<br>
+
 
 
 <details markdown>
@@ -815,6 +820,8 @@ optional arguments:<br>
 <a href="https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s" target="_blank">https://www.youtube.com/watch?v=-8f8avZ2V7s&t=614s</a><br><br>
 </details>
 </details>
+<br>
+
 
 
 
@@ -879,6 +886,8 @@ optional arguments:<br>
 <img src="images/image201.png"><br><br>
 </details>
 </details>
+<br>
+
 
 
 
@@ -892,6 +901,7 @@ optional arguments:<br>
 <a href="https://29a.ch/photo-forensics/#forensic-magnifier" target="_blank">https://29a.ch/photo-forensics/#forensic-magnifier</a><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -948,6 +958,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://databorder.com/transfer/morse-sound-receiver" target="_blank">https://databorder.com/transfer/morse-sound-receiver</a><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -961,6 +972,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="http://www.onedollardata.com/encoder.php" target="_blank">http://www.onedollardata.com/encoder.php</a><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -976,6 +988,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://www.upsidedowntext.com" target="_blank">https://www.upsidedowntext.com</a><br><br>
 </details>
 </details>
+<br>
 
 
 
@@ -989,6 +1002,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <a href="https://www.sejda.com/pdf-editor" target="_blank">https://www.sejda.com/pdf-editor</a><br><br>
 </details>
 </details>
+<br>
 
 
 
