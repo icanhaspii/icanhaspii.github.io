@@ -3,8 +3,6 @@
 <details markdown>
   <br>
   <summary>[Linux Analysis Commands]</summary>
-Run this to determine what type of file you are dealing with:<br><br>
-<img src="images/File_Screenshot 2023-10-03 203208.png"><br><br>
 
 <details markdown>
   <br>
