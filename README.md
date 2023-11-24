@@ -205,7 +205,7 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - pwsh]</summary>
-<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">type:</span></li></ul><p class="c4"><span class="c2">PowerShell works on Linux and was already natively on my Kali box. &nbsp;You can use many of the Linux commands in PowerShell that you would from a Linux terminal, such as sudo apt update and others:</span></p><p class="c3"><span class="c2"></span></p>
+<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">pwsh:</span></li></ul><p class="c4"><span class="c2">PowerShell works on Linux and was already natively on my Kali box. &nbsp;You can use many of the Linux commands in PowerShell that you would from a Linux terminal, such as sudo apt update and others:</span></p><p class="c3"><span class="c2"></span></p>
 
 <p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 474.00px; height: 245.00px;"><img alt="" src="images/image152.jpg" style="width: 474.00px; height: 245.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c3"><span class="c2"></span></p> 
 </details>
