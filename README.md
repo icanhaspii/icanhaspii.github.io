@@ -198,7 +198,7 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - type]</summary>
-<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">type:</span></li></ul><p class="c4"><span class="c2">The type command can be used on the Windows Command Line to display the contents of a file on-screen (in case you find yourself gaining access to a Windows box).</span></p><p class="c3"><span class="c2"></span></p><ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">Pwsh (PowerShell on Linux):</span></li></ul>
+<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">type:</span></li></ul><p class="c4"><span class="c2">The type command can be used on the Windows Command Line to display the contents of a file on-screen (in case you find yourself gaining access to a Windows box).</span></p><p class="c3"><span class="c2"></span></p>
 </details>
 
 
