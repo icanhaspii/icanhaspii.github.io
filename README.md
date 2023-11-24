@@ -179,7 +179,6 @@ curl http://nidus-setup:8080<br><br>
 curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/json" --data-binary '{"temperature":1000}'<br><br>
 <img src="images/image157.png"><br><br>
 </details>
-<br>
 
 
 
