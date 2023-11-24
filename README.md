@@ -181,15 +181,6 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
-
-
-
-
-
-
-
-
-
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - Nano/VIM Alternative]</summary>
@@ -197,17 +188,11 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
-
-
-
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - cat]</summary>
-<p class="c4"><span class="c2">-The cat command can be used to display the contents of a file on-screen.</span></p><p class="c3"><span class="c2"></span></p>
+<p class="c4"><span class="c2">The cat command can be used to display the contents of a file on-screen.</span></p><p class="c3"><span class="c2"></span></p>
 </details>
-
-
-
 
 
 <details markdown>
@@ -217,13 +202,10 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 </details>
 
 
-
-
-
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - pwsh]</summary>
-<p class="c4"><span class="c2">-PowerShell works on Linux and was already natively on my Kali box. &nbsp;You can use many of the Linux commands in PowerShell that you would from a Linux terminal, such as sudo apt update and others:</span></p><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 474.00px; height: 245.00px;"><img alt="" src="images/image152.jpg" style="width: 474.00px; height: 245.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c3"><span class="c2"></span></p>
+<p class="c4"><span class="c2">PowerShell works on Linux and was already natively on my Kali box. &nbsp;You can use many of the Linux commands in PowerShell that you would from a Linux terminal, such as sudo apt update and others:</span></p><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 474.00px; height: 245.00px;"><img alt="" src="images/image152.jpg" style="width: 474.00px; height: 245.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c3"><span class="c2"></span></p>
 </details>
 </details>
 <br>
