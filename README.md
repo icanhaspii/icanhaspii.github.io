@@ -192,7 +192,7 @@ curl -X POST http://nidus-setup:8080/api/cooler -H "Content-Type: application/js
 <details markdown>
   <br>
     <summary>[Linux Analysis Commands - cat]</summary>
-<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">type:</span></li></ul><p class="c4"><span class="c2">The cat command can be used to display the contents of a file on-screen.</span></p><p class="c3"><span class="c2"></span></p>
+<ul class="c8 lst-kix_list_50-0"><li class="c0 li-bullet-0"><span class="c9">cat:</span></li></ul><p class="c4"><span class="c2">The cat command can be used to display the contents of a file on-screen.</span></p><p class="c3"><span class="c2"></span></p>
 </details>
 
 
