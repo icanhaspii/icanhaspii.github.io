@@ -1108,7 +1108,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
   
   
 
-<p class="c3"><span class="c2"></span></p><p class="c4"><span class="c2">Credit to <a href="https://noahheckman.carrd.co">Noah Heckman at BHIS</a> for the below clue using this example: p!hh3b_1b_o_nkf0</span></p><p class="c4"><span class="c2">Underscores can be indicative of a flag. &nbsp;Also, not a lot of encryptions will use an underscore, so when you see those, you pretty much know it&rsquo;s going to be encoding in play. &nbsp;And furthermore, you could even pretty much guess that a single digit denotes an &ldquo;a&rdquo; or an &ldquo;i&rdquo; if in fact the string is going to be decoded into English. &nbsp;Cryptographic Analysis can come in handy here using linguistics such as frequency analysis like common two-letter words, frequency of letters, etc.</span></p>
+<p class="c3"><span class="c2"></span></p><p class="c4"><span class="c2">Credit to <a href="https://noahheckman.carrd.co">Noah Heckman at BHIS</a> for the below clue using this as an example: p!hh3b_1b_o_nkf0</span></p><p class="c4"><span class="c2">Underscores can be indicative of a flag. &nbsp;Also, not a lot of encryptions will use an underscore, so when you see those, you pretty much know it&rsquo;s going to be encoding in play. &nbsp;And furthermore, you could even pretty much guess that a single digit denotes an &ldquo;a&rdquo; or an &ldquo;i&rdquo; if in fact the string is going to be decoded into English. &nbsp;Cryptographic Analysis can come in handy here using linguistics such as frequency analysis like common two-letter words, frequency of letters, etc.</span></p>
 </details>
 </details>
 <br>
