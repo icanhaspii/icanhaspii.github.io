@@ -1158,7 +1158,7 @@ Multitap ABC should not be confused with T9 predictive text. For example,'DCODE'
 <details markdown>
   <br>
     <summary>[PDF Analysis - thunar and atril]</summary>
-The thunar and atril commands appear to yield the same result, each opening-up the Atril PDF Reader.><br><br>
+The thunar and atril commands appear to yield the same result, each opening-up the Atril PDF Reader.<br><br>
 
 thunar Command:
 <img src="images/image228.png"><br><br>
