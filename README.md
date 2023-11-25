@@ -161,6 +161,15 @@ whoami|<br><br>
 
 <details markdown>
   <br>
+    <summary>[Linux Analysis Commands - top]</summary>
+The top command displays the Table of Processes:<br><br>
+<img src="images/image229.png"><br><br>
+</details>
+
+
+
+<details markdown>
+  <br>
     <summary>[Linux Analysis Commands - ps -elf]</summary>
 The ps -elf command displays the Process Status:<br><br>
 <a href="https://www.xitalogy.com/linux-unix/2020/02/22/ps-elf-filter-results-effectively-and-see-if-a-linux-process-is-running.html">https://www.xitalogy.com/linux-unix/2020/02/22/ps-elf-filter-results-effectively-and-see-if-a-linux-process-is-running.html</a><br><br>
@@ -168,7 +177,6 @@ The ps -elf command displays the Process Status:<br><br>
 <img src="images/image231.png"><br><br>
 <img src="images/image234.png"><br><br>
 </details>
-
 
 
 
