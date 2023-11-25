@@ -1175,12 +1175,20 @@ atril PDF Viewer:<br><br>
 <details>
 <summary>[Misc.]</summary>
 <ul>
-  <li><B>Bubble Sort</B></li>
+  <li><B>Bubble Sort:</B></li>
 <ul class="c8 lst-kix_list_93-0 start"><li class="c0 c5 li-bullet-0"><span class="c2">In the off-chance that you come across a challenge which uses Bubble Sort, I found this to be a good guide:</span></li>
 <a href="https://linuxhint.com/bubble-sort-algorithm" target="_blank">https://linuxhint.com/bubble-sort-algorithm</a><br><br>
 </ul>
   
-  
+
+
+<ul>
+  <li><B>Split Screen Terminal Emulator - tmux:</B></li>
+<ul class="c8 lst-kix_list_93-0 start"><li class="c0 c5 li-bullet-0"><span class="c2">The folowing resources were useful to me around tmux:</span></li>
+<a href="https://www.youtube.com/watch?v=Lqehvpe_djs" target="_blank">https://www.youtube.com/watch?v=Lqehvpe_djs</a><br><br>
+<a href="https://medium.com/@jeongwhanchoi/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e" target="_blank">https://medium.com/@jeongwhanchoi/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e</a><br><br>
+</ul>
+
 
 
 <ul>
