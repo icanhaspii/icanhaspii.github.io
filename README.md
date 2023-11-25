@@ -1177,13 +1177,18 @@ atril PDF Viewer:<br><br>
 
 
 <li><B>RHOST vs. LHOST:</B></li>
-I found these helpful for RHOST vs. LHOST and Port 4444 vs. Port 5555 in case anyone else finds it useful:<br><br>
-<a href="https://github.com/rapid7/metasploit-framework/issues/6505" target="_blank">https://github.com/rapid7/metasploit-framework/issues/6505</a><br><br>
+I found these helpful for RHOST vs. LHOST and Port 4444 vs. Port 5555 in case anyone else finds it useful:<br>
+<a href="https://github.com/rapid7/metasploit-framework/issues/6505" target="_blank">https://github.com/rapid7/metasploit-framework/issues/6505</a><br>
 <a href="https://www.reddit.com/r/metasploit/comments/sz5oly/the_meaning_of_lhost_and_rhost" target="_blank">https://www.reddit.com/r/metasploit/comments/sz5oly/the_meaning_of_lhost_and_rhost</a><br><br>
 </details>
+</span></li></ul>
+</br>
   
-  
-  
+
+
+
+
+
   
   
 <ul>
