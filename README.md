@@ -163,7 +163,7 @@ whoami|<br><br>
   <br>
     <summary>[Linux Analysis Commands - ps -elf]</summary>
 The ps -elf command displays the Process Status:<br><br>
-<img src="Screenshot 2023-11-15 231.png"><br><br>
+<img src="images/image231.png"><br><br>
 </details>
 
 
