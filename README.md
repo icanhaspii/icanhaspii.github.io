@@ -386,7 +386,7 @@ Another GoBuster Example Below:<br><br>
     <summary>[Discovery - DirSearch]</summary>
 DirSearch is a robust web content discovery tool:<br><br>
 dirsearch -u http://SiteYouWantToSearch -e php<br><br>
-<img src="images/image184.png_Edited"><br><br>
+<img src="images/image184_Edited.png"><br><br>
 </details>
 
 <details markdown>
